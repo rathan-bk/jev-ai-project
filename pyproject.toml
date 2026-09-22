@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jev-alert-triage"
+version = "0.1.0"
+description = "Alert triage with Jev (TypeSafe System One): proof of concept and benchmark against a rules-only baseline"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "typesafe-sdk>=0.7.0",
+    "python-dotenv>=1.0",
+    "tiktoken>=0.7",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.5"]
+
+[project.scripts]
+triage-generate = "triage.dataset.generate:main"
+triage-rules = "triage.rules:main"
+triage-jev = "triage.jev:main"
+triage-cost = "triage.llm_estimate:main"
+triage-evaluate = "triage.evaluate:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "N", "W", "SIM", "RUF"]
+ignore = ["RUF012"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff.lint.per-file-ignores]
+# Hand-written prose (alert descriptions, the LLM system prompt): keep sentences on one line.
+"src/triage/dataset/hard_cases.py" = ["E501"]
+"src/triage/dataset/scenarios.py" = ["E501"]
+"src/triage/llm_estimate.py" = ["E501"]

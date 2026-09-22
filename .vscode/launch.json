@@ -1,0 +1,123 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python Debugger: Current File",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "name": "dataset: generate",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "triage.dataset.generate",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "justMyCode": true
+    },
+    {
+      "name": "rules: predict",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "triage.rules",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "justMyCode": true
+    },
+    {
+      "name": "rules: tune",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "triage.rules",
+      "args": [
+        "--tune"
+      ],
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "justMyCode": true
+    },
+    {
+      "name": "jev: SMOKE TEST (5 API calls)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "triage.jev",
+      "args": [
+        "--limit",
+        "5"
+      ],
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env",
+      "justMyCode": false
+    },
+    {
+      "name": "jev: FULL RUN (150 API calls)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "triage.jev",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env",
+      "justMyCode": false
+    },
+    {
+      "name": "jev: recombine (no API calls)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "triage.jev",
+      "args": [
+        "--recombine"
+      ],
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "justMyCode": true
+    },
+    {
+      "name": "jev: tune (no API calls)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "triage.jev",
+      "args": [
+        "--tune"
+      ],
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "justMyCode": true
+    },
+    {
+      "name": "cost estimate",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "triage.llm_estimate",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "justMyCode": true
+    },
+    {
+      "name": "evaluate",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "triage.evaluate",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "justMyCode": true
+    },
+    {
+      "name": "pytest: current file",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "pytest",
+      "args": [
+        "-q",
+        "${file}"
+      ],
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "justMyCode": false
+    }
+  ]
+}

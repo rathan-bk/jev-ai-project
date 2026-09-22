@@ -1,0 +1,4814 @@
+{
+  "triager": "jev",
+  "model_requested": "jev-1.13.0",
+  "timestamp": "2026-09-22T16:44:03+00:00",
+  "params": {
+    "noise_min": 0.6,
+    "downstream_min": 0.6,
+    "p1_impact_min": 2.0,
+    "p1_degrading_min": 0.5,
+    "urgency_confidence_min": 0.5
+  },
+  "predictions": {
+    "ALT-001": {
+      "label": "P3",
+      "model": "jev-1.13.0",
+      "latency_ms": 903.8,
+      "input_tokens": 721,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 0.06,
+          "confidence": 0.94,
+          "probabilities": {
+            "No user impact": 0.95,
+            "Internal users affected": 0.05,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.05,
+        "is_downstream_symptom": 0.08,
+        "is_actively_degrading": 0.5,
+        "urgency": {
+          "choice": "backlog",
+          "confidence": 1.0,
+          "probabilities": {
+            "business_hours": 0.0,
+            "backlog": 1.0,
+            "ignore": 0.0,
+            "now": 0.0
+          }
+        }
+      }
+    },
+    "ALT-002": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 421.2,
+      "input_tokens": 750,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 0.48,
+          "confidence": 0.52,
+          "probabilities": {
+            "No user impact": 0.52,
+            "Internal users affected": 0.48,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.81,
+        "is_downstream_symptom": 0.14,
+        "is_actively_degrading": 0.81,
+        "urgency": {
+          "choice": "business_hours",
+          "confidence": 0.87,
+          "probabilities": {
+            "ignore": 0.0,
+            "backlog": 0.07,
+            "business_hours": 0.9,
+            "now": 0.03
+          }
+        }
+      }
+    },
+    "ALT-003": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 351.5,
+      "input_tokens": 751,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 0.33,
+          "confidence": 0.67,
+          "probabilities": {
+            "No user impact": 0.69,
+            "Internal users affected": 0.3,
+            "Some customers affected": 0.01,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.91,
+        "is_downstream_symptom": 0.09,
+        "is_actively_degrading": 0.58,
+        "urgency": {
+          "choice": "ignore",
+          "confidence": 0.97,
+          "probabilities": {
+            "ignore": 0.98,
+            "now": 0.0,
+            "backlog": 0.01,
+            "business_hours": 0.01
+          }
+        }
+      }
+    },
+    "ALT-004": {
+      "label": "P2",
+      "model": "jev-1.13.0",
+      "latency_ms": 383.4,
+      "input_tokens": 720,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 0.08,
+          "confidence": 0.92,
+          "probabilities": {
+            "No user impact": 0.93,
+            "Internal users affected": 0.07,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.06,
+        "is_downstream_symptom": 0.09,
+        "is_actively_degrading": 0.49,
+        "urgency": {
+          "choice": "business_hours",
+          "confidence": 0.74,
+          "probabilities": {
+            "backlog": 0.19,
+            "business_hours": 0.8,
+            "now": 0.01,
+            "ignore": 0.0
+          }
+        }
+      }
+    },
+    "ALT-005": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 329.9,
+      "input_tokens": 777,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 2.38,
+          "confidence": 0.61,
+          "probabilities": {
+            "No user impact": 0.0,
+            "Internal users affected": 0.0,
+            "Some customers affected": 0.62,
+            "Widespread customer impact": 0.38
+          }
+        },
+        "is_noise": 0.07,
+        "is_downstream_symptom": 0.97,
+        "is_actively_degrading": 0.93,
+        "urgency": {
+          "choice": "ignore",
+          "confidence": 0.49,
+          "probabilities": {
+            "now": 0.1,
+            "backlog": 0.23,
+            "ignore": 0.61,
+            "business_hours": 0.06
+          }
+        }
+      }
+    },
+    "ALT-006": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 334.1,
+      "input_tokens": 764,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 0.67,
+          "confidence": 0.66,
+          "probabilities": {
+            "No user impact": 0.33,
+            "Internal users affected": 0.67,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.14,
+        "is_downstream_symptom": 0.98,
+        "is_actively_degrading": 0.83,
+        "urgency": {
+          "choice": "ignore",
+          "confidence": 0.89,
+          "probabilities": {
+            "business_hours": 0.01,
+            "ignore": 0.92,
+            "now": 0.0,
+            "backlog": 0.07
+          }
+        }
+      }
+    },
+    "ALT-007": {
+      "label": "P2",
+      "model": "jev-1.13.0",
+      "latency_ms": 337.0,
+      "input_tokens": 718,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 0.05,
+          "confidence": 0.95,
+          "probabilities": {
+            "No user impact": 0.95,
+            "Internal users affected": 0.05,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.05,
+        "is_downstream_symptom": 0.09,
+        "is_actively_degrading": 0.45,
+        "urgency": {
+          "choice": "business_hours",
+          "confidence": 0.75,
+          "probabilities": {
+            "ignore": 0.0,
+            "now": 0.01,
+            "business_hours": 0.8099999999999999,
+            "backlog": 0.18
+          }
+        }
+      }
+    },
+    "ALT-008": {
+      "label": "P2",
+      "model": "jev-1.13.0",
+      "latency_ms": 346.6,
+      "input_tokens": 757,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 1.0,
+          "confidence": 1.0,
+          "probabilities": {
+            "No user impact": 0.0,
+            "Internal users affected": 1.0,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.09,
+        "is_downstream_symptom": 0.17,
+        "is_actively_degrading": 0.92,
+        "urgency": {
+          "choice": "business_hours",
+          "confidence": 0.78,
+          "probabilities": {
+            "ignore": 0.0,
+            "now": 0.07,
+            "business_hours": 0.84,
+            "backlog": 0.09
+          }
+        }
+      }
+    },
+    "ALT-009": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 384.4,
+      "input_tokens": 752,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 0.05,
+          "confidence": 0.95,
+          "probabilities": {
+            "No user impact": 0.95,
+            "Internal users affected": 0.05,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.92,
+        "is_downstream_symptom": 0.09,
+        "is_actively_degrading": 0.49,
+        "urgency": {
+          "choice": "backlog",
+          "confidence": 0.54,
+          "probabilities": {
+            "business_hours": 0.04,
+            "now": 0.0,
+            "backlog": 0.66,
+            "ignore": 0.3
+          }
+        }
+      }
+    },
+    "ALT-010": {
+      "label": "P1",
+      "model": "jev-1.13.0",
+      "latency_ms": 332.0,
+      "input_tokens": 763,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 2.77,
+          "confidence": 0.77,
+          "probabilities": {
+            "No user impact": 0.0,
+            "Internal users affected": 0.0,
+            "Some customers affected": 0.23,
+            "Widespread customer impact": 0.77
+          }
+        },
+        "is_noise": 0.04,
+        "is_downstream_symptom": 0.17,
+        "is_actively_degrading": 0.95,
+        "urgency": {
+          "choice": "now",
+          "confidence": 1.0,
+          "probabilities": {
+            "ignore": 0.0,
+            "business_hours": 0.0,
+            "now": 1.0,
+            "backlog": 0.0
+          }
+        }
+      }
+    },
+    "ALT-011": {
+      "label": "P2",
+      "model": "jev-1.13.0",
+      "latency_ms": 355.7,
+      "input_tokens": 729,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 1.0,
+          "confidence": 1.0,
+          "probabilities": {
+            "No user impact": 0.0,
+            "Internal users affected": 1.0,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.05,
+        "is_downstream_symptom": 0.2,
+        "is_actively_degrading": 0.91,
+        "urgency": {
+          "choice": "now",
+          "confidence": 0.52,
+          "probabilities": {
+            "business_hours": 0.36,
+            "backlog": 0.0,
+            "now": 0.64,
+            "ignore": 0.0
+          }
+        }
+      }
+    },
+    "ALT-012": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 323.8,
+      "input_tokens": 768,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 2.46,
+          "confidence": 0.54,
+          "probabilities": {
+            "No user impact": 0.0,
+            "Internal users affected": 0.0,
+            "Some customers affected": 0.54,
+            "Widespread customer impact": 0.46
+          }
+        },
+        "is_noise": 0.09,
+        "is_downstream_symptom": 0.97,
+        "is_actively_degrading": 0.93,
+        "urgency": {
+          "choice": "ignore",
+          "confidence": 0.55,
+          "probabilities": {
+            "business_hours": 0.06,
+            "backlog": 0.21,
+            "ignore": 0.66,
+            "now": 0.07
+          }
+        }
+      }
+    },
+    "ALT-013": {
+      "label": "P1",
+      "model": "jev-1.13.0",
+      "latency_ms": 418.7,
+      "input_tokens": 752,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 3.0,
+          "confidence": 1.0,
+          "probabilities": {
+            "No user impact": 0.0,
+            "Internal users affected": 0.0,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 1.0
+          }
+        },
+        "is_noise": 0.05,
+        "is_downstream_symptom": 0.17,
+        "is_actively_degrading": 0.94,
+        "urgency": {
+          "choice": "now",
+          "confidence": 1.0,
+          "probabilities": {
+            "backlog": 0.0,
+            "business_hours": 0.0,
+            "ignore": 0.0,
+            "now": 1.0
+          }
+        }
+      }
+    },
+    "ALT-014": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 320.0,
+      "input_tokens": 770,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 2.68,
+          "confidence": 0.68,
+          "probabilities": {
+            "No user impact": 0.01,
+            "Internal users affected": 0.01,
+            "Some customers affected": 0.28,
+            "Widespread customer impact": 0.7
+          }
+        },
+        "is_noise": 0.06,
+        "is_downstream_symptom": 0.97,
+        "is_actively_degrading": 0.93,
+        "urgency": {
+          "choice": "ignore",
+          "confidence": 0.89,
+          "probabilities": {
+            "ignore": 0.92,
+            "now": 0.02,
+            "backlog": 0.06,
+            "business_hours": 0.0
+          }
+        }
+      }
+    },
+    "ALT-015": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 337.5,
+      "input_tokens": 759,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 0.38,
+          "confidence": 0.62,
+          "probabilities": {
+            "No user impact": 0.79,
+            "Internal users affected": 0.05,
+            "Some customers affected": 0.16,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.94,
+        "is_downstream_symptom": 0.1,
+        "is_actively_degrading": 0.26,
+        "urgency": {
+          "choice": "ignore",
+          "confidence": 0.47,
+          "probabilities": {
+            "ignore": 0.6,
+            "now": 0.0,
+            "business_hours": 0.02,
+            "backlog": 0.38
+          }
+        }
+      }
+    },
+    "ALT-016": {
+      "label": "P2",
+      "model": "jev-1.13.0",
+      "latency_ms": 356.6,
+      "input_tokens": 768,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 2.0,
+          "confidence": 1.0,
+          "probabilities": {
+            "No user impact": 0.0,
+            "Internal users affected": 0.0,
+            "Some customers affected": 1.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.07,
+        "is_downstream_symptom": 0.12,
+        "is_actively_degrading": 0.04,
+        "urgency": {
+          "choice": "business_hours",
+          "confidence": 0.99,
+          "probabilities": {
+            "business_hours": 1.0,
+            "ignore": 0.0,
+            "backlog": 0.0,
+            "now": 0.0
+          }
+        }
+      }
+    },
+    "ALT-017": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 385.0,
+      "input_tokens": 732,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 0.0,
+          "confidence": 1.0,
+          "probabilities": {
+            "No user impact": 1.0,
+            "Internal users affected": 0.0,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.95,
+        "is_downstream_symptom": 0.09,
+        "is_actively_degrading": 0.36,
+        "urgency": {
+          "choice": "ignore",
+          "confidence": 0.86,
+          "probabilities": {
+            "ignore": 0.89,
+            "backlog": 0.11,
+            "now": 0.0,
+            "business_hours": 0.0
+          }
+        }
+      }
+    },
+    "ALT-018": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 348.8,
+      "input_tokens": 754,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 0.92,
+          "confidence": 0.92,
+          "probabilities": {
+            "No user impact": 0.08,
+            "Internal users affected": 0.92,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.78,
+        "is_downstream_symptom": 0.15,
+        "is_actively_degrading": 0.91,
+        "urgency": {
+          "choice": "business_hours",
+          "confidence": 0.85,
+          "probabilities": {
+            "ignore": 0.0,
+            "now": 0.06,
+            "backlog": 0.05,
+            "business_hours": 0.89
+          }
+        }
+      }
+    },
+    "ALT-019": {
+      "label": "NEEDS_HUMAN",
+      "model": "jev-1.13.0",
+      "latency_ms": 323.8,
+      "input_tokens": 765,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 1.0,
+          "confidence": 0.99,
+          "probabilities": {
+            "No user impact": 0.01,
+            "Internal users affected": 0.99,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.03,
+        "is_downstream_symptom": 0.08,
+        "is_actively_degrading": 0.97,
+        "urgency": {
+          "choice": "business_hours",
+          "confidence": 0.45,
+          "probabilities": {
+            "now": 0.41,
+            "business_hours": 0.59,
+            "backlog": 0.0,
+            "ignore": 0.0
+          }
+        }
+      }
+    },
+    "ALT-020": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 443.0,
+      "input_tokens": 761,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 0.99,
+          "confidence": 0.92,
+          "probabilities": {
+            "No user impact": 0.04,
+            "Internal users affected": 0.93,
+            "Some customers affected": 0.02,
+            "Widespread customer impact": 0.01
+          }
+        },
+        "is_noise": 0.13,
+        "is_downstream_symptom": 0.98,
+        "is_actively_degrading": 0.93,
+        "urgency": {
+          "choice": "ignore",
+          "confidence": 0.72,
+          "probabilities": {
+            "ignore": 0.78,
+            "now": 0.01,
+            "business_hours": 0.03,
+            "backlog": 0.18
+          }
+        }
+      }
+    },
+    "ALT-021": {
+      "label": "P3",
+      "model": "jev-1.13.0",
+      "latency_ms": 380.9,
+      "input_tokens": 780,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 0.01,
+          "confidence": 0.99,
+          "probabilities": {
+            "No user impact": 0.99,
+            "Internal users affected": 0.01,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.08,
+        "is_downstream_symptom": 0.08,
+        "is_actively_degrading": 0.6,
+        "urgency": {
+          "choice": "backlog",
+          "confidence": 0.83,
+          "probabilities": {
+            "now": 0.0,
+            "backlog": 0.87,
+            "ignore": 0.08,
+            "business_hours": 0.05
+          }
+        }
+      }
+    },
+    "ALT-022": {
+      "label": "P3",
+      "model": "jev-1.13.0",
+      "latency_ms": 347.2,
+      "input_tokens": 740,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 0.46,
+          "confidence": 0.54,
+          "probabilities": {
+            "No user impact": 0.54,
+            "Internal users affected": 0.46,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.05,
+        "is_downstream_symptom": 0.07,
+        "is_actively_degrading": 0.42,
+        "urgency": {
+          "choice": "backlog",
+          "confidence": 1.0,
+          "probabilities": {
+            "ignore": 0.0,
+            "now": 0.0,
+            "backlog": 1.0,
+            "business_hours": 0.0
+          }
+        }
+      }
+    },
+    "ALT-023": {
+      "label": "P2",
+      "model": "jev-1.13.0",
+      "latency_ms": 358.7,
+      "input_tokens": 768,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 2.0,
+          "confidence": 1.0,
+          "probabilities": {
+            "No user impact": 0.0,
+            "Internal users affected": 0.0,
+            "Some customers affected": 1.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.07,
+        "is_downstream_symptom": 0.11,
+        "is_actively_degrading": 0.04,
+        "urgency": {
+          "choice": "business_hours",
+          "confidence": 0.99,
+          "probabilities": {
+            "business_hours": 1.0,
+            "now": 0.0,
+            "ignore": 0.0,
+            "backlog": 0.0
+          }
+        }
+      }
+    },
+    "ALT-024": {
+      "label": "P1",
+      "model": "jev-1.13.0",
+      "latency_ms": 409.2,
+      "input_tokens": 755,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 2.81,
+          "confidence": 0.81,
+          "probabilities": {
+            "No user impact": 0.0,
+            "Internal users affected": 0.0,
+            "Some customers affected": 0.19,
+            "Widespread customer impact": 0.81
+          }
+        },
+        "is_noise": 0.03,
+        "is_downstream_symptom": 0.18,
+        "is_actively_degrading": 0.94,
+        "urgency": {
+          "choice": "now",
+          "confidence": 1.0,
+          "probabilities": {
+            "backlog": 0.0,
+            "ignore": 0.0,
+            "now": 1.0,
+            "business_hours": 0.0
+          }
+        }
+      }
+    },
+    "ALT-025": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 341.3,
+      "input_tokens": 763,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 2.41,
+          "confidence": 0.58,
+          "probabilities": {
+            "No user impact": 0.0,
+            "Internal users affected": 0.0,
+            "Some customers affected": 0.58,
+            "Widespread customer impact": 0.42
+          }
+        },
+        "is_noise": 0.08,
+        "is_downstream_symptom": 0.97,
+        "is_actively_degrading": 0.93,
+        "urgency": {
+          "choice": "ignore",
+          "confidence": 0.68,
+          "probabilities": {
+            "business_hours": 0.03,
+            "backlog": 0.16,
+            "now": 0.04,
+            "ignore": 0.77
+          }
+        }
+      }
+    },
+    "ALT-026": {
+      "label": "P2",
+      "model": "jev-1.13.0",
+      "latency_ms": 356.7,
+      "input_tokens": 768,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 2.0,
+          "confidence": 1.0,
+          "probabilities": {
+            "No user impact": 0.0,
+            "Internal users affected": 0.0,
+            "Some customers affected": 1.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.07,
+        "is_downstream_symptom": 0.1,
+        "is_actively_degrading": 0.56,
+        "urgency": {
+          "choice": "business_hours",
+          "confidence": 1.0,
+          "probabilities": {
+            "business_hours": 1.0,
+            "now": 0.0,
+            "backlog": 0.0,
+            "ignore": 0.0
+          }
+        }
+      }
+    },
+    "ALT-027": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 420.7,
+      "input_tokens": 766,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 0.02,
+          "confidence": 0.98,
+          "probabilities": {
+            "No user impact": 0.98,
+            "Internal users affected": 0.02,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.73,
+        "is_downstream_symptom": 0.17,
+        "is_actively_degrading": 0.68,
+        "urgency": {
+          "choice": "ignore",
+          "confidence": 0.55,
+          "probabilities": {
+            "ignore": 0.66,
+            "business_hours": 0.09,
+            "now": 0.01,
+            "backlog": 0.24
+          }
+        }
+      }
+    },
+    "ALT-028": {
+      "label": "P1",
+      "model": "jev-1.13.0",
+      "latency_ms": 319.7,
+      "input_tokens": 775,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 2.93,
+          "confidence": 0.93,
+          "probabilities": {
+            "No user impact": 0.0,
+            "Internal users affected": 0.0,
+            "Some customers affected": 0.07,
+            "Widespread customer impact": 0.93
+          }
+        },
+        "is_noise": 0.02,
+        "is_downstream_symptom": 0.38,
+        "is_actively_degrading": 0.97,
+        "urgency": {
+          "choice": "now",
+          "confidence": 1.0,
+          "probabilities": {
+            "business_hours": 0.0,
+            "ignore": 0.0,
+            "now": 1.0,
+            "backlog": 0.0
+          }
+        }
+      }
+    },
+    "ALT-029": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 547.4,
+      "input_tokens": 704,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 0.03,
+          "confidence": 0.97,
+          "probabilities": {
+            "No user impact": 0.97,
+            "Internal users affected": 0.03,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.89,
+        "is_downstream_symptom": 0.14,
+        "is_actively_degrading": 0.65,
+        "urgency": {
+          "choice": "ignore",
+          "confidence": 0.71,
+          "probabilities": {
+            "ignore": 0.78,
+            "business_hours": 0.05,
+            "backlog": 0.17,
+            "now": 0.0
+          }
+        }
+      }
+    },
+    "ALT-030": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 457.6,
+      "input_tokens": 752,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 0.92,
+          "confidence": 0.92,
+          "probabilities": {
+            "No user impact": 0.08,
+            "Internal users affected": 0.92,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.78,
+        "is_downstream_symptom": 0.13,
+        "is_actively_degrading": 0.87,
+        "urgency": {
+          "choice": "business_hours",
+          "confidence": 0.87,
+          "probabilities": {
+            "ignore": 0.0,
+            "backlog": 0.03,
+            "now": 0.06,
+            "business_hours": 0.91
+          }
+        }
+      }
+    },
+    "ALT-031": {
+      "label": "P1",
+      "model": "jev-1.13.0",
+      "latency_ms": 390.9,
+      "input_tokens": 753,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 2.9,
+          "confidence": 0.9,
+          "probabilities": {
+            "No user impact": 0.0,
+            "Internal users affected": 0.0,
+            "Some customers affected": 0.1,
+            "Widespread customer impact": 0.9
+          }
+        },
+        "is_noise": 0.02,
+        "is_downstream_symptom": 0.19,
+        "is_actively_degrading": 0.97,
+        "urgency": {
+          "choice": "now",
+          "confidence": 1.0,
+          "probabilities": {
+            "ignore": 0.0,
+            "backlog": 0.0,
+            "now": 1.0,
+            "business_hours": 0.0
+          }
+        }
+      }
+    },
+    "ALT-032": {
+      "label": "NEEDS_HUMAN",
+      "model": "jev-1.13.0",
+      "latency_ms": 385.4,
+      "input_tokens": 764,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 0.09,
+          "confidence": 0.91,
+          "probabilities": {
+            "No user impact": 0.94,
+            "Internal users affected": 0.03,
+            "Some customers affected": 0.03,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.59,
+        "is_downstream_symptom": 0.08,
+        "is_actively_degrading": 0.76,
+        "urgency": {
+          "choice": "ignore",
+          "confidence": 0.49,
+          "probabilities": {
+            "business_hours": 0.05,
+            "backlog": 0.33,
+            "now": 0.0,
+            "ignore": 0.62
+          }
+        }
+      }
+    },
+    "ALT-033": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 355.3,
+      "input_tokens": 736,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 0.0,
+          "confidence": 1.0,
+          "probabilities": {
+            "No user impact": 1.0,
+            "Internal users affected": 0.0,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.94,
+        "is_downstream_symptom": 0.07,
+        "is_actively_degrading": 0.41,
+        "urgency": {
+          "choice": "ignore",
+          "confidence": 0.75,
+          "probabilities": {
+            "backlog": 0.18,
+            "ignore": 0.8200000000000001,
+            "business_hours": 0.0,
+            "now": 0.0
+          }
+        }
+      }
+    },
+    "ALT-034": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 320.4,
+      "input_tokens": 761,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 0.01,
+          "confidence": 0.99,
+          "probabilities": {
+            "No user impact": 0.99,
+            "Internal users affected": 0.01,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.95,
+        "is_downstream_symptom": 0.11,
+        "is_actively_degrading": 0.72,
+        "urgency": {
+          "choice": "ignore",
+          "confidence": 0.97,
+          "probabilities": {
+            "ignore": 0.98,
+            "now": 0.0,
+            "backlog": 0.01,
+            "business_hours": 0.01
+          }
+        }
+      }
+    },
+    "ALT-035": {
+      "label": "P2",
+      "model": "jev-1.13.0",
+      "latency_ms": 353.0,
+      "input_tokens": 720,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 1.0,
+          "confidence": 1.0,
+          "probabilities": {
+            "No user impact": 0.0,
+            "Internal users affected": 1.0,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.07,
+        "is_downstream_symptom": 0.16,
+        "is_actively_degrading": 0.91,
+        "urgency": {
+          "choice": "business_hours",
+          "confidence": 0.55,
+          "probabilities": {
+            "ignore": 0.0,
+            "now": 0.33,
+            "backlog": 0.01,
+            "business_hours": 0.66
+          }
+        }
+      }
+    },
+    "ALT-036": {
+      "label": "P2",
+      "model": "jev-1.13.0",
+      "latency_ms": 387.7,
+      "input_tokens": 780,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 1.0,
+          "confidence": 0.99,
+          "probabilities": {
+            "No user impact": 0.0,
+            "Internal users affected": 1.0,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.13,
+        "is_downstream_symptom": 0.1,
+        "is_actively_degrading": 0.9,
+        "urgency": {
+          "choice": "business_hours",
+          "confidence": 0.69,
+          "probabilities": {
+            "now": 0.21,
+            "ignore": 0.02,
+            "backlog": 0.01,
+            "business_hours": 0.76
+          }
+        }
+      }
+    },
+    "ALT-037": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 363.1,
+      "input_tokens": 744,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 2.2,
+          "confidence": 0.75,
+          "probabilities": {
+            "No user impact": 0.01,
+            "Internal users affected": 0.01,
+            "Some customers affected": 0.75,
+            "Widespread customer impact": 0.23
+          }
+        },
+        "is_noise": 0.14,
+        "is_downstream_symptom": 0.98,
+        "is_actively_degrading": 0.86,
+        "urgency": {
+          "choice": "ignore",
+          "confidence": 0.93,
+          "probabilities": {
+            "ignore": 0.95,
+            "business_hours": 0.01,
+            "now": 0.0,
+            "backlog": 0.04
+          }
+        }
+      }
+    },
+    "ALT-038": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 383.7,
+      "input_tokens": 753,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 0.86,
+          "confidence": 0.14,
+          "probabilities": {
+            "No user impact": 0.4,
+            "Internal users affected": 0.37,
+            "Some customers affected": 0.2,
+            "Widespread customer impact": 0.03
+          }
+        },
+        "is_noise": 0.16,
+        "is_downstream_symptom": 0.98,
+        "is_actively_degrading": 0.83,
+        "urgency": {
+          "choice": "ignore",
+          "confidence": 0.92,
+          "probabilities": {
+            "now": 0.0,
+            "ignore": 0.94,
+            "backlog": 0.05,
+            "business_hours": 0.01
+          }
+        }
+      }
+    },
+    "ALT-039": {
+      "label": "P1",
+      "model": "jev-1.13.0",
+      "latency_ms": 353.9,
+      "input_tokens": 749,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 2.62,
+          "confidence": 0.62,
+          "probabilities": {
+            "No user impact": 0.0,
+            "Internal users affected": 0.0,
+            "Some customers affected": 0.38,
+            "Widespread customer impact": 0.62
+          }
+        },
+        "is_noise": 0.04,
+        "is_downstream_symptom": 0.24,
+        "is_actively_degrading": 0.94,
+        "urgency": {
+          "choice": "now",
+          "confidence": 0.99,
+          "probabilities": {
+            "business_hours": 0.0,
+            "now": 1.0,
+            "ignore": 0.0,
+            "backlog": 0.0
+          }
+        }
+      }
+    },
+    "ALT-040": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 362.7,
+      "input_tokens": 762,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 2.39,
+          "confidence": 0.6,
+          "probabilities": {
+            "No user impact": 0.0,
+            "Internal users affected": 0.0,
+            "Some customers affected": 0.6,
+            "Widespread customer impact": 0.4
+          }
+        },
+        "is_noise": 0.08,
+        "is_downstream_symptom": 0.98,
+        "is_actively_degrading": 0.93,
+        "urgency": {
+          "choice": "ignore",
+          "confidence": 0.68,
+          "probabilities": {
+            "now": 0.03,
+            "backlog": 0.18,
+            "business_hours": 0.02,
+            "ignore": 0.77
+          }
+        }
+      }
+    },
+    "ALT-041": {
+      "label": "P3",
+      "model": "jev-1.13.0",
+      "latency_ms": 340.1,
+      "input_tokens": 733,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 0.02,
+          "confidence": 0.98,
+          "probabilities": {
+            "No user impact": 0.98,
+            "Internal users affected": 0.02,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.05,
+        "is_downstream_symptom": 0.07,
+        "is_actively_degrading": 0.56,
+        "urgency": {
+          "choice": "backlog",
+          "confidence": 0.54,
+          "probabilities": {
+            "business_hours": 0.34,
+            "ignore": 0.0,
+            "backlog": 0.66,
+            "now": 0.0
+          }
+        }
+      }
+    },
+    "ALT-042": {
+      "label": "P3",
+      "model": "jev-1.13.0",
+      "latency_ms": 368.5,
+      "input_tokens": 750,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 0.04,
+          "confidence": 0.96,
+          "probabilities": {
+            "No user impact": 0.99,
+            "Internal users affected": 0.0,
+            "Some customers affected": 0.01,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.07,
+        "is_downstream_symptom": 0.08,
+        "is_actively_degrading": 0.38,
+        "urgency": {
+          "choice": "backlog",
+          "confidence": 0.9,
+          "probabilities": {
+            "business_hours": 0.07,
+            "ignore": 0.0,
+            "now": 0.0,
+            "backlog": 0.93
+          }
+        }
+      }
+    },
+    "ALT-043": {
+      "label": "P3",
+      "model": "jev-1.13.0",
+      "latency_ms": 373.5,
+      "input_tokens": 779,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 0.96,
+          "confidence": 0.95,
+          "probabilities": {
+            "No user impact": 0.04,
+            "Internal users affected": 0.96,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.13,
+        "is_downstream_symptom": 0.12,
+        "is_actively_degrading": 0.86,
+        "urgency": {
+          "choice": "backlog",
+          "confidence": 0.9,
+          "probabilities": {
+            "business_hours": 0.07,
+            "ignore": 0.0,
+            "backlog": 0.93,
+            "now": 0.0
+          }
+        }
+      }
+    },
+    "ALT-044": {
+      "label": "P1",
+      "model": "jev-1.13.0",
+      "latency_ms": 376.9,
+      "input_tokens": 744,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 2.72,
+          "confidence": 0.72,
+          "probabilities": {
+            "No user impact": 0.0,
+            "Internal users affected": 0.0,
+            "Some customers affected": 0.28,
+            "Widespread customer impact": 0.72
+          }
+        },
+        "is_noise": 0.03,
+        "is_downstream_symptom": 0.21,
+        "is_actively_degrading": 0.94,
+        "urgency": {
+          "choice": "now",
+          "confidence": 0.97,
+          "probabilities": {
+            "ignore": 0.0,
+            "now": 0.98,
+            "business_hours": 0.02,
+            "backlog": 0.0
+          }
+        }
+      }
+    },
+    "ALT-045": {
+      "label": "NEEDS_HUMAN",
+      "model": "jev-1.13.0",
+      "latency_ms": 354.2,
+      "input_tokens": 732,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 1.0,
+          "confidence": 1.0,
+          "probabilities": {
+            "No user impact": 0.0,
+            "Internal users affected": 1.0,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.08,
+        "is_downstream_symptom": 0.16,
+        "is_actively_degrading": 0.91,
+        "urgency": {
+          "choice": "business_hours",
+          "confidence": 0.46,
+          "probabilities": {
+            "now": 0.38,
+            "business_hours": 0.6,
+            "ignore": 0.0,
+            "backlog": 0.02
+          }
+        }
+      }
+    },
+    "ALT-046": {
+      "label": "P2",
+      "model": "jev-1.13.0",
+      "latency_ms": 336.0,
+      "input_tokens": 763,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 0.99,
+          "confidence": 0.99,
+          "probabilities": {
+            "No user impact": 0.01,
+            "Internal users affected": 0.99,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.08,
+        "is_downstream_symptom": 0.15,
+        "is_actively_degrading": 0.89,
+        "urgency": {
+          "choice": "business_hours",
+          "confidence": 0.79,
+          "probabilities": {
+            "business_hours": 0.85,
+            "ignore": 0.0,
+            "backlog": 0.02,
+            "now": 0.13
+          }
+        }
+      }
+    },
+    "ALT-047": {
+      "label": "P1",
+      "model": "jev-1.13.0",
+      "latency_ms": 314.2,
+      "input_tokens": 772,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 2.73,
+          "confidence": 0.73,
+          "probabilities": {
+            "No user impact": 0.0,
+            "Internal users affected": 0.0,
+            "Some customers affected": 0.26,
+            "Widespread customer impact": 0.74
+          }
+        },
+        "is_noise": 0.04,
+        "is_downstream_symptom": 0.51,
+        "is_actively_degrading": 0.97,
+        "urgency": {
+          "choice": "now",
+          "confidence": 0.97,
+          "probabilities": {
+            "business_hours": 0.02,
+            "backlog": 0.0,
+            "now": 0.98,
+            "ignore": 0.0
+          }
+        }
+      }
+    },
+    "ALT-048": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 320.1,
+      "input_tokens": 764,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 0.71,
+          "confidence": 0.7,
+          "probabilities": {
+            "No user impact": 0.3,
+            "Internal users affected": 0.7,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.15,
+        "is_downstream_symptom": 0.98,
+        "is_actively_degrading": 0.82,
+        "urgency": {
+          "choice": "ignore",
+          "confidence": 0.92,
+          "probabilities": {
+            "ignore": 0.94,
+            "backlog": 0.05,
+            "now": 0.0,
+            "business_hours": 0.01
+          }
+        }
+      }
+    },
+    "ALT-049": {
+      "label": "P1",
+      "model": "jev-1.13.0",
+      "latency_ms": 350.4,
+      "input_tokens": 763,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 2.98,
+          "confidence": 0.98,
+          "probabilities": {
+            "No user impact": 0.0,
+            "Internal users affected": 0.0,
+            "Some customers affected": 0.01,
+            "Widespread customer impact": 0.99
+          }
+        },
+        "is_noise": 0.02,
+        "is_downstream_symptom": 0.21,
+        "is_actively_degrading": 0.96,
+        "urgency": {
+          "choice": "now",
+          "confidence": 0.98,
+          "probabilities": {
+            "ignore": 0.0,
+            "business_hours": 0.02,
+            "now": 0.98,
+            "backlog": 0.0
+          }
+        }
+      }
+    },
+    "ALT-050": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 339.7,
+      "input_tokens": 730,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 0.56,
+          "confidence": 0.44,
+          "probabilities": {
+            "No user impact": 0.52,
+            "Internal users affected": 0.41,
+            "Some customers affected": 0.07,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.88,
+        "is_downstream_symptom": 0.13,
+        "is_actively_degrading": 0.8,
+        "urgency": {
+          "choice": "ignore",
+          "confidence": 0.63,
+          "probabilities": {
+            "ignore": 0.72,
+            "business_hours": 0.07,
+            "now": 0.03,
+            "backlog": 0.18
+          }
+        }
+      }
+    },
+    "ALT-051": {
+      "label": "P2",
+      "model": "jev-1.13.0",
+      "latency_ms": 315.4,
+      "input_tokens": 766,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 0.49,
+          "confidence": 0.51,
+          "probabilities": {
+            "No user impact": 0.75,
+            "Internal users affected": 0.01,
+            "Some customers affected": 0.24,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.24,
+        "is_downstream_symptom": 0.12,
+        "is_actively_degrading": 0.71,
+        "urgency": {
+          "choice": "business_hours",
+          "confidence": 0.99,
+          "probabilities": {
+            "now": 0.0,
+            "backlog": 0.01,
+            "business_hours": 0.99,
+            "ignore": 0.0
+          }
+        }
+      }
+    },
+    "ALT-052": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 376.5,
+      "input_tokens": 770,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 0.88,
+          "confidence": 0.59,
+          "probabilities": {
+            "No user impact": 0.26,
+            "Internal users affected": 0.61,
+            "Some customers affected": 0.11,
+            "Widespread customer impact": 0.02
+          }
+        },
+        "is_noise": 0.09,
+        "is_downstream_symptom": 0.97,
+        "is_actively_degrading": 0.92,
+        "urgency": {
+          "choice": "ignore",
+          "confidence": 0.6,
+          "probabilities": {
+            "backlog": 0.21,
+            "now": 0.04,
+            "ignore": 0.7,
+            "business_hours": 0.05
+          }
+        }
+      }
+    },
+    "ALT-053": {
+      "label": "P1",
+      "model": "jev-1.13.0",
+      "latency_ms": 337.8,
+      "input_tokens": 776,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 3.0,
+          "confidence": 1.0,
+          "probabilities": {
+            "No user impact": 0.0,
+            "Internal users affected": 0.0,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 1.0
+          }
+        },
+        "is_noise": 0.02,
+        "is_downstream_symptom": 0.11,
+        "is_actively_degrading": 0.96,
+        "urgency": {
+          "choice": "now",
+          "confidence": 1.0,
+          "probabilities": {
+            "now": 1.0,
+            "backlog": 0.0,
+            "business_hours": 0.0,
+            "ignore": 0.0
+          }
+        }
+      }
+    },
+    "ALT-054": {
+      "label": "P1",
+      "model": "jev-1.13.0",
+      "latency_ms": 388.1,
+      "input_tokens": 765,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 2.98,
+          "confidence": 0.98,
+          "probabilities": {
+            "No user impact": 0.0,
+            "Internal users affected": 0.0,
+            "Some customers affected": 0.02,
+            "Widespread customer impact": 0.98
+          }
+        },
+        "is_noise": 0.03,
+        "is_downstream_symptom": 0.31,
+        "is_actively_degrading": 0.96,
+        "urgency": {
+          "choice": "now",
+          "confidence": 1.0,
+          "probabilities": {
+            "business_hours": 0.0,
+            "now": 1.0,
+            "backlog": 0.0,
+            "ignore": 0.0
+          }
+        }
+      }
+    },
+    "ALT-055": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 393.9,
+      "input_tokens": 752,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 0.96,
+          "confidence": 0.85,
+          "probabilities": {
+            "No user impact": 0.09,
+            "Internal users affected": 0.86,
+            "Some customers affected": 0.05,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.76,
+        "is_downstream_symptom": 0.12,
+        "is_actively_degrading": 0.84,
+        "urgency": {
+          "choice": "business_hours",
+          "confidence": 0.59,
+          "probabilities": {
+            "ignore": 0.01,
+            "backlog": 0.06,
+            "business_hours": 0.7,
+            "now": 0.23
+          }
+        }
+      }
+    },
+    "ALT-056": {
+      "label": "P2",
+      "model": "jev-1.13.0",
+      "latency_ms": 383.8,
+      "input_tokens": 711,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 0.26,
+          "confidence": 0.74,
+          "probabilities": {
+            "No user impact": 0.87,
+            "Internal users affected": 0.01,
+            "Some customers affected": 0.09,
+            "Widespread customer impact": 0.03
+          }
+        },
+        "is_noise": 0.05,
+        "is_downstream_symptom": 0.09,
+        "is_actively_degrading": 0.48,
+        "urgency": {
+          "choice": "business_hours",
+          "confidence": 0.78,
+          "probabilities": {
+            "now": 0.01,
+            "backlog": 0.16,
+            "business_hours": 0.83,
+            "ignore": 0.0
+          }
+        }
+      }
+    },
+    "ALT-057": {
+      "label": "P2",
+      "model": "jev-1.13.0",
+      "latency_ms": 324.2,
+      "input_tokens": 772,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 0.7,
+          "confidence": 0.3,
+          "probabilities": {
+            "No user impact": 0.65,
+            "Internal users affected": 0.01,
+            "Some customers affected": 0.34,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.32,
+        "is_downstream_symptom": 0.1,
+        "is_actively_degrading": 0.62,
+        "urgency": {
+          "choice": "business_hours",
+          "confidence": 0.97,
+          "probabilities": {
+            "now": 0.0,
+            "ignore": 0.0,
+            "backlog": 0.02,
+            "business_hours": 0.98
+          }
+        }
+      }
+    },
+    "ALT-058": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 381.6,
+      "input_tokens": 702,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 0.09,
+          "confidence": 0.91,
+          "probabilities": {
+            "No user impact": 0.91,
+            "Internal users affected": 0.09,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.94,
+        "is_downstream_symptom": 0.13,
+        "is_actively_degrading": 0.85,
+        "urgency": {
+          "choice": "ignore",
+          "confidence": 0.82,
+          "probabilities": {
+            "backlog": 0.09,
+            "now": 0.01,
+            "ignore": 0.86,
+            "business_hours": 0.04
+          }
+        }
+      }
+    },
+    "ALT-059": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 350.6,
+      "input_tokens": 764,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 0.67,
+          "confidence": 0.66,
+          "probabilities": {
+            "No user impact": 0.34,
+            "Internal users affected": 0.66,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.14,
+        "is_downstream_symptom": 0.98,
+        "is_actively_degrading": 0.83,
+        "urgency": {
+          "choice": "ignore",
+          "confidence": 0.92,
+          "probabilities": {
+            "ignore": 0.94,
+            "now": 0.0,
+            "backlog": 0.05,
+            "business_hours": 0.01
+          }
+        }
+      }
+    },
+    "ALT-060": {
+      "label": "P3",
+      "model": "jev-1.13.0",
+      "latency_ms": 384.2,
+      "input_tokens": 727,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 0.02,
+          "confidence": 0.98,
+          "probabilities": {
+            "No user impact": 0.99,
+            "Internal users affected": 0.0,
+            "Some customers affected": 0.01,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.07,
+        "is_downstream_symptom": 0.08,
+        "is_actively_degrading": 0.37,
+        "urgency": {
+          "choice": "backlog",
+          "confidence": 0.9,
+          "probabilities": {
+            "ignore": 0.0,
+            "business_hours": 0.07,
+            "backlog": 0.93,
+            "now": 0.0
+          }
+        }
+      }
+    },
+    "ALT-061": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 334.1,
+      "input_tokens": 767,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 2.45,
+          "confidence": 0.55,
+          "probabilities": {
+            "No user impact": 0.0,
+            "Internal users affected": 0.0,
+            "Some customers affected": 0.55,
+            "Widespread customer impact": 0.45
+          }
+        },
+        "is_noise": 0.07,
+        "is_downstream_symptom": 0.97,
+        "is_actively_degrading": 0.93,
+        "urgency": {
+          "choice": "ignore",
+          "confidence": 0.61,
+          "probabilities": {
+            "business_hours": 0.05,
+            "ignore": 0.71,
+            "now": 0.05,
+            "backlog": 0.19
+          }
+        }
+      }
+    },
+    "ALT-062": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 354.8,
+      "input_tokens": 745,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 2.32,
+          "confidence": 0.61,
+          "probabilities": {
+            "No user impact": 0.01,
+            "Internal users affected": 0.0,
+            "Some customers affected": 0.63,
+            "Widespread customer impact": 0.36
+          }
+        },
+        "is_noise": 0.12,
+        "is_downstream_symptom": 0.98,
+        "is_actively_degrading": 0.87,
+        "urgency": {
+          "choice": "ignore",
+          "confidence": 0.93,
+          "probabilities": {
+            "now": 0.01,
+            "business_hours": 0.01,
+            "backlog": 0.04,
+            "ignore": 0.94
+          }
+        }
+      }
+    },
+    "ALT-063": {
+      "label": "P1",
+      "model": "jev-1.13.0",
+      "latency_ms": 317.7,
+      "input_tokens": 761,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 2.98,
+          "confidence": 0.98,
+          "probabilities": {
+            "No user impact": 0.0,
+            "Internal users affected": 0.0,
+            "Some customers affected": 0.02,
+            "Widespread customer impact": 0.98
+          }
+        },
+        "is_noise": 0.04,
+        "is_downstream_symptom": 0.26,
+        "is_actively_degrading": 0.93,
+        "urgency": {
+          "choice": "now",
+          "confidence": 1.0,
+          "probabilities": {
+            "ignore": 0.0,
+            "business_hours": 0.0,
+            "backlog": 0.0,
+            "now": 1.0
+          }
+        }
+      }
+    },
+    "ALT-064": {
+      "label": "P1",
+      "model": "jev-1.13.0",
+      "latency_ms": 307.0,
+      "input_tokens": 751,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 2.78,
+          "confidence": 0.78,
+          "probabilities": {
+            "No user impact": 0.0,
+            "Internal users affected": 0.0,
+            "Some customers affected": 0.22,
+            "Widespread customer impact": 0.78
+          }
+        },
+        "is_noise": 0.02,
+        "is_downstream_symptom": 0.22,
+        "is_actively_degrading": 0.94,
+        "urgency": {
+          "choice": "now",
+          "confidence": 0.86,
+          "probabilities": {
+            "business_hours": 0.11,
+            "ignore": 0.0,
+            "now": 0.89,
+            "backlog": 0.0
+          }
+        }
+      }
+    },
+    "ALT-065": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 310.3,
+      "input_tokens": 771,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 0.86,
+          "confidence": 0.54,
+          "probabilities": {
+            "No user impact": 0.3,
+            "Internal users affected": 0.56,
+            "Some customers affected": 0.12,
+            "Widespread customer impact": 0.02
+          }
+        },
+        "is_noise": 0.09,
+        "is_downstream_symptom": 0.97,
+        "is_actively_degrading": 0.92,
+        "urgency": {
+          "choice": "ignore",
+          "confidence": 0.5,
+          "probabilities": {
+            "ignore": 0.62,
+            "now": 0.04,
+            "backlog": 0.28,
+            "business_hours": 0.06
+          }
+        }
+      }
+    },
+    "ALT-066": {
+      "label": "NEEDS_HUMAN",
+      "model": "jev-1.13.0",
+      "latency_ms": 479.0,
+      "input_tokens": 780,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 1.0,
+          "confidence": 1.0,
+          "probabilities": {
+            "No user impact": 0.0,
+            "Internal users affected": 1.0,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.42,
+        "is_downstream_symptom": 0.16,
+        "is_actively_degrading": 0.92,
+        "urgency": {
+          "choice": "now",
+          "confidence": 0.48,
+          "probabilities": {
+            "backlog": 0.0,
+            "business_hours": 0.39,
+            "now": 0.61,
+            "ignore": 0.0
+          }
+        }
+      }
+    },
+    "ALT-067": {
+      "label": "P2",
+      "model": "jev-1.13.0",
+      "latency_ms": 351.3,
+      "input_tokens": 765,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 2.0,
+          "confidence": 1.0,
+          "probabilities": {
+            "No user impact": 0.0,
+            "Internal users affected": 0.0,
+            "Some customers affected": 1.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.06,
+        "is_downstream_symptom": 0.09,
+        "is_actively_degrading": 0.04,
+        "urgency": {
+          "choice": "business_hours",
+          "confidence": 0.99,
+          "probabilities": {
+            "business_hours": 0.99,
+            "now": 0.01,
+            "backlog": 0.0,
+            "ignore": 0.0
+          }
+        }
+      }
+    },
+    "ALT-068": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 374.6,
+      "input_tokens": 757,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 0.9,
+          "confidence": 0.9,
+          "probabilities": {
+            "No user impact": 0.1,
+            "Internal users affected": 0.9,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.71,
+        "is_downstream_symptom": 0.12,
+        "is_actively_degrading": 0.92,
+        "urgency": {
+          "choice": "now",
+          "confidence": 0.44,
+          "probabilities": {
+            "ignore": 0.0,
+            "now": 0.58,
+            "backlog": 0.0,
+            "business_hours": 0.42
+          }
+        }
+      }
+    },
+    "ALT-069": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 335.3,
+      "input_tokens": 732,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 0.0,
+          "confidence": 1.0,
+          "probabilities": {
+            "No user impact": 1.0,
+            "Internal users affected": 0.0,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.93,
+        "is_downstream_symptom": 0.08,
+        "is_actively_degrading": 0.42,
+        "urgency": {
+          "choice": "ignore",
+          "confidence": 0.72,
+          "probabilities": {
+            "ignore": 0.78,
+            "business_hours": 0.01,
+            "backlog": 0.21,
+            "now": 0.0
+          }
+        }
+      }
+    },
+    "ALT-070": {
+      "label": "P3",
+      "model": "jev-1.13.0",
+      "latency_ms": 395.7,
+      "input_tokens": 737,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 0.01,
+          "confidence": 0.99,
+          "probabilities": {
+            "No user impact": 1.0,
+            "Internal users affected": 0.0,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.06,
+        "is_downstream_symptom": 0.07,
+        "is_actively_degrading": 0.48,
+        "urgency": {
+          "choice": "backlog",
+          "confidence": 0.93,
+          "probabilities": {
+            "business_hours": 0.05,
+            "backlog": 0.95,
+            "now": 0.0,
+            "ignore": 0.0
+          }
+        }
+      }
+    },
+    "ALT-071": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 347.4,
+      "input_tokens": 719,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 0.24,
+          "confidence": 0.76,
+          "probabilities": {
+            "No user impact": 0.76,
+            "Internal users affected": 0.24,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.9,
+        "is_downstream_symptom": 0.13,
+        "is_actively_degrading": 0.55,
+        "urgency": {
+          "choice": "ignore",
+          "confidence": 0.87,
+          "probabilities": {
+            "backlog": 0.08,
+            "now": 0.0,
+            "ignore": 0.9,
+            "business_hours": 0.02
+          }
+        }
+      }
+    },
+    "ALT-072": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 328.4,
+      "input_tokens": 747,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 2.15,
+          "confidence": 0.76,
+          "probabilities": {
+            "No user impact": 0.02,
+            "Internal users affected": 0.0,
+            "Some customers affected": 0.78,
+            "Widespread customer impact": 0.2
+          }
+        },
+        "is_noise": 0.11,
+        "is_downstream_symptom": 0.98,
+        "is_actively_degrading": 0.84,
+        "urgency": {
+          "choice": "ignore",
+          "confidence": 0.93,
+          "probabilities": {
+            "ignore": 0.94,
+            "business_hours": 0.01,
+            "now": 0.01,
+            "backlog": 0.04
+          }
+        }
+      }
+    },
+    "ALT-073": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 406.6,
+      "input_tokens": 744,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 0.0,
+          "confidence": 1.0,
+          "probabilities": {
+            "No user impact": 1.0,
+            "Internal users affected": 0.0,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.94,
+        "is_downstream_symptom": 0.09,
+        "is_actively_degrading": 0.45,
+        "urgency": {
+          "choice": "ignore",
+          "confidence": 0.73,
+          "probabilities": {
+            "now": 0.0,
+            "business_hours": 0.01,
+            "backlog": 0.2,
+            "ignore": 0.79
+          }
+        }
+      }
+    },
+    "ALT-074": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 354.3,
+      "input_tokens": 731,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 0.0,
+          "confidence": 1.0,
+          "probabilities": {
+            "No user impact": 1.0,
+            "Internal users affected": 0.0,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.95,
+        "is_downstream_symptom": 0.09,
+        "is_actively_degrading": 0.38,
+        "urgency": {
+          "choice": "ignore",
+          "confidence": 0.79,
+          "probabilities": {
+            "business_hours": 0.0,
+            "ignore": 0.85,
+            "backlog": 0.15,
+            "now": 0.0
+          }
+        }
+      }
+    },
+    "ALT-075": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 342.3,
+      "input_tokens": 740,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 0.01,
+          "confidence": 0.99,
+          "probabilities": {
+            "No user impact": 0.99,
+            "Internal users affected": 0.01,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.94,
+        "is_downstream_symptom": 0.09,
+        "is_actively_degrading": 0.33,
+        "urgency": {
+          "choice": "ignore",
+          "confidence": 0.85,
+          "probabilities": {
+            "business_hours": 0.0,
+            "backlog": 0.11,
+            "ignore": 0.89,
+            "now": 0.0
+          }
+        }
+      }
+    },
+    "ALT-076": {
+      "label": "P1",
+      "model": "jev-1.13.0",
+      "latency_ms": 374.7,
+      "input_tokens": 772,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 2.67,
+          "confidence": 0.67,
+          "probabilities": {
+            "No user impact": 0.0,
+            "Internal users affected": 0.0,
+            "Some customers affected": 0.33,
+            "Widespread customer impact": 0.67
+          }
+        },
+        "is_noise": 0.03,
+        "is_downstream_symptom": 0.36,
+        "is_actively_degrading": 0.97,
+        "urgency": {
+          "choice": "now",
+          "confidence": 1.0,
+          "probabilities": {
+            "now": 1.0,
+            "business_hours": 0.0,
+            "ignore": 0.0,
+            "backlog": 0.0
+          }
+        }
+      }
+    },
+    "ALT-077": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 333.7,
+      "input_tokens": 754,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 0.83,
+          "confidence": 0.4,
+          "probabilities": {
+            "No user impact": 0.39,
+            "Internal users affected": 0.42,
+            "Some customers affected": 0.16,
+            "Widespread customer impact": 0.03
+          }
+        },
+        "is_noise": 0.19,
+        "is_downstream_symptom": 0.98,
+        "is_actively_degrading": 0.83,
+        "urgency": {
+          "choice": "ignore",
+          "confidence": 0.93,
+          "probabilities": {
+            "now": 0.0,
+            "business_hours": 0.01,
+            "ignore": 0.95,
+            "backlog": 0.04
+          }
+        }
+      }
+    },
+    "ALT-078": {
+      "label": "P3",
+      "model": "jev-1.13.0",
+      "latency_ms": 354.9,
+      "input_tokens": 724,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 0.59,
+          "confidence": 0.41,
+          "probabilities": {
+            "No user impact": 0.7,
+            "Internal users affected": 0.02,
+            "Some customers affected": 0.25,
+            "Widespread customer impact": 0.03
+          }
+        },
+        "is_noise": 0.04,
+        "is_downstream_symptom": 0.07,
+        "is_actively_degrading": 0.5,
+        "urgency": {
+          "choice": "backlog",
+          "confidence": 1.0,
+          "probabilities": {
+            "business_hours": 0.0,
+            "ignore": 0.0,
+            "backlog": 1.0,
+            "now": 0.0
+          }
+        }
+      }
+    },
+    "ALT-079": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 310.8,
+      "input_tokens": 698,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 0.07,
+          "confidence": 0.93,
+          "probabilities": {
+            "No user impact": 0.93,
+            "Internal users affected": 0.07,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.95,
+        "is_downstream_symptom": 0.1,
+        "is_actively_degrading": 0.72,
+        "urgency": {
+          "choice": "ignore",
+          "confidence": 0.94,
+          "probabilities": {
+            "ignore": 0.95,
+            "now": 0.0,
+            "backlog": 0.04,
+            "business_hours": 0.01
+          }
+        }
+      }
+    },
+    "ALT-080": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 382.6,
+      "input_tokens": 761,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 2.28,
+          "confidence": 0.72,
+          "probabilities": {
+            "No user impact": 0.0,
+            "Internal users affected": 0.0,
+            "Some customers affected": 0.72,
+            "Widespread customer impact": 0.28
+          }
+        },
+        "is_noise": 0.08,
+        "is_downstream_symptom": 0.97,
+        "is_actively_degrading": 0.93,
+        "urgency": {
+          "choice": "ignore",
+          "confidence": 0.59,
+          "probabilities": {
+            "business_hours": 0.04,
+            "ignore": 0.69,
+            "backlog": 0.21,
+            "now": 0.06
+          }
+        }
+      }
+    },
+    "ALT-081": {
+      "label": "P3",
+      "model": "jev-1.13.0",
+      "latency_ms": 340.2,
+      "input_tokens": 723,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 0.05,
+          "confidence": 0.95,
+          "probabilities": {
+            "No user impact": 0.95,
+            "Internal users affected": 0.05,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.05,
+        "is_downstream_symptom": 0.07,
+        "is_actively_degrading": 0.43,
+        "urgency": {
+          "choice": "backlog",
+          "confidence": 1.0,
+          "probabilities": {
+            "now": 0.0,
+            "business_hours": 0.0,
+            "backlog": 1.0,
+            "ignore": 0.0
+          }
+        }
+      }
+    },
+    "ALT-082": {
+      "label": "P3",
+      "model": "jev-1.13.0",
+      "latency_ms": 365.4,
+      "input_tokens": 739,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 0.01,
+          "confidence": 0.99,
+          "probabilities": {
+            "No user impact": 0.99,
+            "Internal users affected": 0.01,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.08,
+        "is_downstream_symptom": 0.07,
+        "is_actively_degrading": 0.43,
+        "urgency": {
+          "choice": "backlog",
+          "confidence": 0.95,
+          "probabilities": {
+            "backlog": 0.97,
+            "ignore": 0.0,
+            "now": 0.0,
+            "business_hours": 0.03
+          }
+        }
+      }
+    },
+    "ALT-083": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 368.3,
+      "input_tokens": 758,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 0.87,
+          "confidence": 0.86,
+          "probabilities": {
+            "No user impact": 0.14,
+            "Internal users affected": 0.86,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.77,
+        "is_downstream_symptom": 0.14,
+        "is_actively_degrading": 0.85,
+        "urgency": {
+          "choice": "business_hours",
+          "confidence": 0.49,
+          "probabilities": {
+            "ignore": 0.0,
+            "business_hours": 0.62,
+            "now": 0.37,
+            "backlog": 0.01
+          }
+        }
+      }
+    },
+    "ALT-084": {
+      "label": "P3",
+      "model": "jev-1.13.0",
+      "latency_ms": 331.0,
+      "input_tokens": 724,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 0.53,
+          "confidence": 0.47,
+          "probabilities": {
+            "No user impact": 0.74,
+            "Internal users affected": 0.01,
+            "Some customers affected": 0.23,
+            "Widespread customer impact": 0.02
+          }
+        },
+        "is_noise": 0.04,
+        "is_downstream_symptom": 0.08,
+        "is_actively_degrading": 0.45,
+        "urgency": {
+          "choice": "backlog",
+          "confidence": 1.0,
+          "probabilities": {
+            "business_hours": 0.0,
+            "ignore": 0.0,
+            "backlog": 1.0,
+            "now": 0.0
+          }
+        }
+      }
+    },
+    "ALT-085": {
+      "label": "P2",
+      "model": "jev-1.13.0",
+      "latency_ms": 372.1,
+      "input_tokens": 762,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 0.99,
+          "confidence": 0.98,
+          "probabilities": {
+            "No user impact": 0.02,
+            "Internal users affected": 0.98,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.08,
+        "is_downstream_symptom": 0.14,
+        "is_actively_degrading": 0.88,
+        "urgency": {
+          "choice": "business_hours",
+          "confidence": 0.58,
+          "probabilities": {
+            "now": 0.29,
+            "backlog": 0.02,
+            "business_hours": 0.6900000000000001,
+            "ignore": 0.0
+          }
+        }
+      }
+    },
+    "ALT-086": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 332.2,
+      "input_tokens": 753,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 0.95,
+          "confidence": 0.95,
+          "probabilities": {
+            "No user impact": 0.05,
+            "Internal users affected": 0.95,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.71,
+        "is_downstream_symptom": 0.16,
+        "is_actively_degrading": 0.93,
+        "urgency": {
+          "choice": "now",
+          "confidence": 0.41,
+          "probabilities": {
+            "business_hours": 0.44,
+            "now": 0.56,
+            "backlog": 0.0,
+            "ignore": 0.0
+          }
+        }
+      }
+    },
+    "ALT-087": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 327.7,
+      "input_tokens": 750,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 0.15,
+          "confidence": 0.85,
+          "probabilities": {
+            "No user impact": 0.86,
+            "Internal users affected": 0.14,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.89,
+        "is_downstream_symptom": 0.13,
+        "is_actively_degrading": 0.66,
+        "urgency": {
+          "choice": "ignore",
+          "confidence": 0.99,
+          "probabilities": {
+            "now": 0.0,
+            "business_hours": 0.0,
+            "backlog": 0.0,
+            "ignore": 1.0
+          }
+        }
+      }
+    },
+    "ALT-088": {
+      "label": "P2",
+      "model": "jev-1.13.0",
+      "latency_ms": 337.2,
+      "input_tokens": 750,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 0.99,
+          "confidence": 0.98,
+          "probabilities": {
+            "No user impact": 0.02,
+            "Internal users affected": 0.97,
+            "Some customers affected": 0.01,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.49,
+        "is_downstream_symptom": 0.17,
+        "is_actively_degrading": 0.9,
+        "urgency": {
+          "choice": "business_hours",
+          "confidence": 0.65,
+          "probabilities": {
+            "now": 0.26,
+            "backlog": 0.0,
+            "business_hours": 0.74,
+            "ignore": 0.0
+          }
+        }
+      }
+    },
+    "ALT-089": {
+      "label": "P2",
+      "model": "jev-1.13.0",
+      "latency_ms": 354.4,
+      "input_tokens": 777,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 2.0,
+          "confidence": 1.0,
+          "probabilities": {
+            "No user impact": 0.0,
+            "Internal users affected": 0.0,
+            "Some customers affected": 1.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.07,
+        "is_downstream_symptom": 0.11,
+        "is_actively_degrading": 0.04,
+        "urgency": {
+          "choice": "business_hours",
+          "confidence": 0.99,
+          "probabilities": {
+            "now": 0.0,
+            "business_hours": 1.0,
+            "backlog": 0.0,
+            "ignore": 0.0
+          }
+        }
+      }
+    },
+    "ALT-090": {
+      "label": "P1",
+      "model": "jev-1.13.0",
+      "latency_ms": 350.3,
+      "input_tokens": 747,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 2.79,
+          "confidence": 0.79,
+          "probabilities": {
+            "No user impact": 0.0,
+            "Internal users affected": 0.0,
+            "Some customers affected": 0.21,
+            "Widespread customer impact": 0.79
+          }
+        },
+        "is_noise": 0.03,
+        "is_downstream_symptom": 0.25,
+        "is_actively_degrading": 0.93,
+        "urgency": {
+          "choice": "now",
+          "confidence": 0.88,
+          "probabilities": {
+            "ignore": 0.0,
+            "now": 0.91,
+            "business_hours": 0.09,
+            "backlog": 0.0
+          }
+        }
+      }
+    },
+    "ALT-091": {
+      "label": "P1",
+      "model": "jev-1.13.0",
+      "latency_ms": 388.4,
+      "input_tokens": 752,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 2.77,
+          "confidence": 0.77,
+          "probabilities": {
+            "No user impact": 0.0,
+            "Internal users affected": 0.0,
+            "Some customers affected": 0.23,
+            "Widespread customer impact": 0.77
+          }
+        },
+        "is_noise": 0.03,
+        "is_downstream_symptom": 0.22,
+        "is_actively_degrading": 0.94,
+        "urgency": {
+          "choice": "now",
+          "confidence": 1.0,
+          "probabilities": {
+            "business_hours": 0.0,
+            "now": 1.0,
+            "backlog": 0.0,
+            "ignore": 0.0
+          }
+        }
+      }
+    },
+    "ALT-092": {
+      "label": "P3",
+      "model": "jev-1.13.0",
+      "latency_ms": 455.9,
+      "input_tokens": 724,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 0.37,
+          "confidence": 0.63,
+          "probabilities": {
+            "No user impact": 0.63,
+            "Internal users affected": 0.37,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.06,
+        "is_downstream_symptom": 0.07,
+        "is_actively_degrading": 0.46,
+        "urgency": {
+          "choice": "backlog",
+          "confidence": 1.0,
+          "probabilities": {
+            "business_hours": 0.0,
+            "backlog": 1.0,
+            "ignore": 0.0,
+            "now": 0.0
+          }
+        }
+      }
+    },
+    "ALT-093": {
+      "label": "P3",
+      "model": "jev-1.13.0",
+      "latency_ms": 407.9,
+      "input_tokens": 770,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 0.01,
+          "confidence": 0.99,
+          "probabilities": {
+            "No user impact": 1.0,
+            "Internal users affected": 0.0,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.59,
+        "is_downstream_symptom": 0.07,
+        "is_actively_degrading": 0.78,
+        "urgency": {
+          "choice": "backlog",
+          "confidence": 0.6,
+          "probabilities": {
+            "ignore": 0.01,
+            "backlog": 0.7,
+            "now": 0.0,
+            "business_hours": 0.29
+          }
+        }
+      }
+    },
+    "ALT-094": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 409.2,
+      "input_tokens": 723,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 0.3,
+          "confidence": 0.7,
+          "probabilities": {
+            "No user impact": 0.7,
+            "Internal users affected": 0.3,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.87,
+        "is_downstream_symptom": 0.13,
+        "is_actively_degrading": 0.85,
+        "urgency": {
+          "choice": "ignore",
+          "confidence": 0.38,
+          "probabilities": {
+            "ignore": 0.52,
+            "business_hours": 0.18,
+            "now": 0.04,
+            "backlog": 0.26
+          }
+        }
+      }
+    },
+    "ALT-095": {
+      "label": "P3",
+      "model": "jev-1.13.0",
+      "latency_ms": 406.4,
+      "input_tokens": 745,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 0.04,
+          "confidence": 0.96,
+          "probabilities": {
+            "No user impact": 0.96,
+            "Internal users affected": 0.04,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.06,
+        "is_downstream_symptom": 0.07,
+        "is_actively_degrading": 0.45,
+        "urgency": {
+          "choice": "backlog",
+          "confidence": 1.0,
+          "probabilities": {
+            "business_hours": 0.0,
+            "ignore": 0.0,
+            "backlog": 1.0,
+            "now": 0.0
+          }
+        }
+      }
+    },
+    "ALT-096": {
+      "label": "P2",
+      "model": "jev-1.13.0",
+      "latency_ms": 342.0,
+      "input_tokens": 768,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 2.0,
+          "confidence": 1.0,
+          "probabilities": {
+            "No user impact": 0.0,
+            "Internal users affected": 0.0,
+            "Some customers affected": 1.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.07,
+        "is_downstream_symptom": 0.11,
+        "is_actively_degrading": 0.04,
+        "urgency": {
+          "choice": "business_hours",
+          "confidence": 0.99,
+          "probabilities": {
+            "business_hours": 0.99,
+            "backlog": 0.01,
+            "now": 0.0,
+            "ignore": 0.0
+          }
+        }
+      }
+    },
+    "ALT-097": {
+      "label": "P2",
+      "model": "jev-1.13.0",
+      "latency_ms": 341.0,
+      "input_tokens": 714,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 0.36,
+          "confidence": 0.64,
+          "probabilities": {
+            "No user impact": 0.83,
+            "Internal users affected": 0.01,
+            "Some customers affected": 0.12,
+            "Widespread customer impact": 0.04
+          }
+        },
+        "is_noise": 0.05,
+        "is_downstream_symptom": 0.09,
+        "is_actively_degrading": 0.44,
+        "urgency": {
+          "choice": "business_hours",
+          "confidence": 0.73,
+          "probabilities": {
+            "backlog": 0.2,
+            "business_hours": 0.79,
+            "now": 0.01,
+            "ignore": 0.0
+          }
+        }
+      }
+    },
+    "ALT-098": {
+      "label": "P1",
+      "model": "jev-1.13.0",
+      "latency_ms": 445.2,
+      "input_tokens": 771,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 2.9,
+          "confidence": 0.9,
+          "probabilities": {
+            "No user impact": 0.0,
+            "Internal users affected": 0.0,
+            "Some customers affected": 0.1,
+            "Widespread customer impact": 0.9
+          }
+        },
+        "is_noise": 0.03,
+        "is_downstream_symptom": 0.19,
+        "is_actively_degrading": 0.95,
+        "urgency": {
+          "choice": "now",
+          "confidence": 0.98,
+          "probabilities": {
+            "ignore": 0.0,
+            "backlog": 0.0,
+            "now": 0.99,
+            "business_hours": 0.01
+          }
+        }
+      }
+    },
+    "ALT-099": {
+      "label": "P2",
+      "model": "jev-1.13.0",
+      "latency_ms": 358.9,
+      "input_tokens": 757,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 1.95,
+          "confidence": 0.94,
+          "probabilities": {
+            "No user impact": 0.01,
+            "Internal users affected": 0.03,
+            "Some customers affected": 0.96,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.34,
+        "is_downstream_symptom": 0.15,
+        "is_actively_degrading": 0.89,
+        "urgency": {
+          "choice": "business_hours",
+          "confidence": 0.91,
+          "probabilities": {
+            "business_hours": 0.9400000000000001,
+            "now": 0.06,
+            "ignore": 0.0,
+            "backlog": 0.0
+          }
+        }
+      }
+    },
+    "ALT-100": {
+      "label": "P2",
+      "model": "jev-1.13.0",
+      "latency_ms": 369.7,
+      "input_tokens": 750,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 1.0,
+          "confidence": 1.0,
+          "probabilities": {
+            "No user impact": 0.0,
+            "Internal users affected": 1.0,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.1,
+        "is_downstream_symptom": 0.19,
+        "is_actively_degrading": 0.92,
+        "urgency": {
+          "choice": "business_hours",
+          "confidence": 0.82,
+          "probabilities": {
+            "backlog": 0.05,
+            "business_hours": 0.87,
+            "ignore": 0.0,
+            "now": 0.08
+          }
+        }
+      }
+    },
+    "ALT-101": {
+      "label": "P3",
+      "model": "jev-1.13.0",
+      "latency_ms": 400.8,
+      "input_tokens": 731,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 0.03,
+          "confidence": 0.97,
+          "probabilities": {
+            "No user impact": 0.99,
+            "Internal users affected": 0.0,
+            "Some customers affected": 0.01,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.05,
+        "is_downstream_symptom": 0.08,
+        "is_actively_degrading": 0.35,
+        "urgency": {
+          "choice": "backlog",
+          "confidence": 0.88,
+          "probabilities": {
+            "business_hours": 0.08,
+            "backlog": 0.92,
+            "now": 0.0,
+            "ignore": 0.0
+          }
+        }
+      }
+    },
+    "ALT-102": {
+      "label": "P2",
+      "model": "jev-1.13.0",
+      "latency_ms": 403.2,
+      "input_tokens": 766,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 1.0,
+          "confidence": 1.0,
+          "probabilities": {
+            "No user impact": 0.0,
+            "Internal users affected": 1.0,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.03,
+        "is_downstream_symptom": 0.05,
+        "is_actively_degrading": 0.95,
+        "urgency": {
+          "choice": "business_hours",
+          "confidence": 0.67,
+          "probabilities": {
+            "business_hours": 0.75,
+            "now": 0.25,
+            "ignore": 0.0,
+            "backlog": 0.0
+          }
+        }
+      }
+    },
+    "ALT-103": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 381.7,
+      "input_tokens": 763,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 0.55,
+          "confidence": 0.55,
+          "probabilities": {
+            "No user impact": 0.45,
+            "Internal users affected": 0.55,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.78,
+        "is_downstream_symptom": 0.14,
+        "is_actively_degrading": 0.86,
+        "urgency": {
+          "choice": "business_hours",
+          "confidence": 0.79,
+          "probabilities": {
+            "ignore": 0.0,
+            "now": 0.1,
+            "backlog": 0.06,
+            "business_hours": 0.84
+          }
+        }
+      }
+    },
+    "ALT-104": {
+      "label": "P2",
+      "model": "jev-1.13.0",
+      "latency_ms": 331.9,
+      "input_tokens": 767,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 2.0,
+          "confidence": 1.0,
+          "probabilities": {
+            "No user impact": 0.0,
+            "Internal users affected": 0.0,
+            "Some customers affected": 1.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.06,
+        "is_downstream_symptom": 0.11,
+        "is_actively_degrading": 0.04,
+        "urgency": {
+          "choice": "business_hours",
+          "confidence": 0.98,
+          "probabilities": {
+            "backlog": 0.0,
+            "business_hours": 0.99,
+            "now": 0.01,
+            "ignore": 0.0
+          }
+        }
+      }
+    },
+    "ALT-105": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 458.4,
+      "input_tokens": 781,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 2.16,
+          "confidence": 0.83,
+          "probabilities": {
+            "No user impact": 0.0,
+            "Internal users affected": 0.0,
+            "Some customers affected": 0.83,
+            "Widespread customer impact": 0.17
+          }
+        },
+        "is_noise": 0.05,
+        "is_downstream_symptom": 0.97,
+        "is_actively_degrading": 0.93,
+        "urgency": {
+          "choice": "now",
+          "confidence": 0.5,
+          "probabilities": {
+            "ignore": 0.32,
+            "backlog": 0.05,
+            "now": 0.62,
+            "business_hours": 0.01
+          }
+        }
+      }
+    },
+    "ALT-106": {
+      "label": "P2",
+      "model": "jev-1.13.0",
+      "latency_ms": 359.9,
+      "input_tokens": 780,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 2.0,
+          "confidence": 1.0,
+          "probabilities": {
+            "No user impact": 0.0,
+            "Internal users affected": 0.0,
+            "Some customers affected": 1.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.07,
+        "is_downstream_symptom": 0.1,
+        "is_actively_degrading": 0.04,
+        "urgency": {
+          "choice": "business_hours",
+          "confidence": 0.99,
+          "probabilities": {
+            "ignore": 0.0,
+            "business_hours": 1.0,
+            "backlog": 0.0,
+            "now": 0.0
+          }
+        }
+      }
+    },
+    "ALT-107": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 419.8,
+      "input_tokens": 706,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 0.48,
+          "confidence": 0.52,
+          "probabilities": {
+            "No user impact": 0.53,
+            "Internal users affected": 0.47,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.91,
+        "is_downstream_symptom": 0.14,
+        "is_actively_degrading": 0.77,
+        "urgency": {
+          "choice": "ignore",
+          "confidence": 0.56,
+          "probabilities": {
+            "ignore": 0.67,
+            "backlog": 0.2,
+            "business_hours": 0.12,
+            "now": 0.01
+          }
+        }
+      }
+    },
+    "ALT-108": {
+      "label": "P2",
+      "model": "jev-1.13.0",
+      "latency_ms": 358.6,
+      "input_tokens": 772,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 0.54,
+          "confidence": 0.46,
+          "probabilities": {
+            "No user impact": 0.73,
+            "Internal users affected": 0.01,
+            "Some customers affected": 0.26,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.2,
+        "is_downstream_symptom": 0.13,
+        "is_actively_degrading": 0.78,
+        "urgency": {
+          "choice": "business_hours",
+          "confidence": 0.99,
+          "probabilities": {
+            "ignore": 0.0,
+            "business_hours": 0.99,
+            "now": 0.0,
+            "backlog": 0.01
+          }
+        }
+      }
+    },
+    "ALT-109": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 372.3,
+      "input_tokens": 743,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 0.54,
+          "confidence": 0.46,
+          "probabilities": {
+            "No user impact": 0.49,
+            "Internal users affected": 0.49,
+            "Some customers affected": 0.02,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.63,
+        "is_downstream_symptom": 0.16,
+        "is_actively_degrading": 0.89,
+        "urgency": {
+          "choice": "business_hours",
+          "confidence": 0.41,
+          "probabilities": {
+            "ignore": 0.0,
+            "now": 0.43,
+            "backlog": 0.02,
+            "business_hours": 0.55
+          }
+        }
+      }
+    },
+    "ALT-110": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 413.5,
+      "input_tokens": 734,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 0.0,
+          "confidence": 1.0,
+          "probabilities": {
+            "No user impact": 1.0,
+            "Internal users affected": 0.0,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.94,
+        "is_downstream_symptom": 0.09,
+        "is_actively_degrading": 0.39,
+        "urgency": {
+          "choice": "ignore",
+          "confidence": 0.82,
+          "probabilities": {
+            "now": 0.0,
+            "business_hours": 0.01,
+            "ignore": 0.86,
+            "backlog": 0.13
+          }
+        }
+      }
+    },
+    "ALT-111": {
+      "label": "NEEDS_HUMAN",
+      "model": "jev-1.13.0",
+      "latency_ms": 378.5,
+      "input_tokens": 770,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 0.01,
+          "confidence": 0.99,
+          "probabilities": {
+            "No user impact": 1.0,
+            "Internal users affected": 0.0,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.25,
+        "is_downstream_symptom": 0.09,
+        "is_actively_degrading": 0.42,
+        "urgency": {
+          "choice": "backlog",
+          "confidence": 0.36,
+          "probabilities": {
+            "ignore": 0.31,
+            "business_hours": 0.16,
+            "now": 0.01,
+            "backlog": 0.52
+          }
+        }
+      }
+    },
+    "ALT-112": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 411.1,
+      "input_tokens": 720,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 0.38,
+          "confidence": 0.62,
+          "probabilities": {
+            "No user impact": 0.77,
+            "Internal users affected": 0.1,
+            "Some customers affected": 0.13,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.9,
+        "is_downstream_symptom": 0.12,
+        "is_actively_degrading": 0.56,
+        "urgency": {
+          "choice": "ignore",
+          "confidence": 0.87,
+          "probabilities": {
+            "now": 0.01,
+            "business_hours": 0.02,
+            "backlog": 0.07,
+            "ignore": 0.9
+          }
+        }
+      }
+    },
+    "ALT-113": {
+      "label": "P3",
+      "model": "jev-1.13.0",
+      "latency_ms": 342.9,
+      "input_tokens": 736,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 0.01,
+          "confidence": 0.99,
+          "probabilities": {
+            "No user impact": 0.99,
+            "Internal users affected": 0.01,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.06,
+        "is_downstream_symptom": 0.07,
+        "is_actively_degrading": 0.51,
+        "urgency": {
+          "choice": "backlog",
+          "confidence": 0.76,
+          "probabilities": {
+            "now": 0.0,
+            "backlog": 0.82,
+            "business_hours": 0.18,
+            "ignore": 0.0
+          }
+        }
+      }
+    },
+    "ALT-114": {
+      "label": "NEEDS_HUMAN",
+      "model": "jev-1.13.0",
+      "latency_ms": 321.6,
+      "input_tokens": 765,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 1.02,
+          "confidence": 0.97,
+          "probabilities": {
+            "No user impact": 0.0,
+            "Internal users affected": 0.97,
+            "Some customers affected": 0.03,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.05,
+        "is_downstream_symptom": 0.11,
+        "is_actively_degrading": 0.93,
+        "urgency": {
+          "choice": "now",
+          "confidence": 0.36,
+          "probabilities": {
+            "ignore": 0.0,
+            "now": 0.52,
+            "backlog": 0.0,
+            "business_hours": 0.48
+          }
+        }
+      }
+    },
+    "ALT-115": {
+      "label": "P3",
+      "model": "jev-1.13.0",
+      "latency_ms": 363.3,
+      "input_tokens": 753,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 0.01,
+          "confidence": 0.99,
+          "probabilities": {
+            "No user impact": 0.99,
+            "Internal users affected": 0.01,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.06,
+        "is_downstream_symptom": 0.08,
+        "is_actively_degrading": 0.41,
+        "urgency": {
+          "choice": "backlog",
+          "confidence": 0.77,
+          "probabilities": {
+            "ignore": 0.0,
+            "business_hours": 0.17,
+            "backlog": 0.83,
+            "now": 0.0
+          }
+        }
+      }
+    },
+    "ALT-116": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 329.1,
+      "input_tokens": 772,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 1.12,
+          "confidence": 0.08,
+          "probabilities": {
+            "No user impact": 0.44,
+            "Internal users affected": 0.02,
+            "Some customers affected": 0.52,
+            "Widespread customer impact": 0.02
+          }
+        },
+        "is_noise": 0.94,
+        "is_downstream_symptom": 0.1,
+        "is_actively_degrading": 0.34,
+        "urgency": {
+          "choice": "backlog",
+          "confidence": 0.43,
+          "probabilities": {
+            "ignore": 0.4,
+            "business_hours": 0.02,
+            "backlog": 0.58,
+            "now": 0.0
+          }
+        }
+      }
+    },
+    "ALT-117": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 351.9,
+      "input_tokens": 761,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 0.93,
+          "confidence": 0.86,
+          "probabilities": {
+            "No user impact": 0.1,
+            "Internal users affected": 0.87,
+            "Some customers affected": 0.03,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.73,
+        "is_downstream_symptom": 0.12,
+        "is_actively_degrading": 0.89,
+        "urgency": {
+          "choice": "business_hours",
+          "confidence": 0.82,
+          "probabilities": {
+            "backlog": 0.04,
+            "now": 0.09,
+            "ignore": 0.0,
+            "business_hours": 0.87
+          }
+        }
+      }
+    },
+    "ALT-118": {
+      "label": "P2",
+      "model": "jev-1.13.0",
+      "latency_ms": 344.9,
+      "input_tokens": 760,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 2.0,
+          "confidence": 1.0,
+          "probabilities": {
+            "No user impact": 0.0,
+            "Internal users affected": 0.0,
+            "Some customers affected": 1.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.06,
+        "is_downstream_symptom": 0.13,
+        "is_actively_degrading": 0.72,
+        "urgency": {
+          "choice": "business_hours",
+          "confidence": 0.98,
+          "probabilities": {
+            "ignore": 0.0,
+            "business_hours": 0.99,
+            "backlog": 0.0,
+            "now": 0.01
+          }
+        }
+      }
+    },
+    "ALT-119": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 338.2,
+      "input_tokens": 732,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 0.0,
+          "confidence": 1.0,
+          "probabilities": {
+            "No user impact": 1.0,
+            "Internal users affected": 0.0,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.93,
+        "is_downstream_symptom": 0.09,
+        "is_actively_degrading": 0.35,
+        "urgency": {
+          "choice": "ignore",
+          "confidence": 0.82,
+          "probabilities": {
+            "ignore": 0.87,
+            "backlog": 0.13,
+            "now": 0.0,
+            "business_hours": 0.0
+          }
+        }
+      }
+    },
+    "ALT-120": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 385.4,
+      "input_tokens": 755,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 0.92,
+          "confidence": 0.92,
+          "probabilities": {
+            "No user impact": 0.08,
+            "Internal users affected": 0.92,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.68,
+        "is_downstream_symptom": 0.13,
+        "is_actively_degrading": 0.92,
+        "urgency": {
+          "choice": "now",
+          "confidence": 0.35,
+          "probabilities": {
+            "business_hours": 0.48,
+            "now": 0.52,
+            "backlog": 0.0,
+            "ignore": 0.0
+          }
+        }
+      }
+    },
+    "ALT-121": {
+      "label": "NEEDS_HUMAN",
+      "model": "jev-1.13.0",
+      "latency_ms": 335.9,
+      "input_tokens": 762,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 0.95,
+          "confidence": 0.95,
+          "probabilities": {
+            "No user impact": 0.05,
+            "Internal users affected": 0.95,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.1,
+        "is_downstream_symptom": 0.19,
+        "is_actively_degrading": 0.86,
+        "urgency": {
+          "choice": "business_hours",
+          "confidence": 0.46,
+          "probabilities": {
+            "now": 0.37,
+            "business_hours": 0.59,
+            "backlog": 0.03,
+            "ignore": 0.01
+          }
+        }
+      }
+    },
+    "ALT-122": {
+      "label": "P3",
+      "model": "jev-1.13.0",
+      "latency_ms": 351.0,
+      "input_tokens": 746,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 0.03,
+          "confidence": 0.97,
+          "probabilities": {
+            "No user impact": 0.99,
+            "Internal users affected": 0.0,
+            "Some customers affected": 0.01,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.05,
+        "is_downstream_symptom": 0.07,
+        "is_actively_degrading": 0.41,
+        "urgency": {
+          "choice": "backlog",
+          "confidence": 0.89,
+          "probabilities": {
+            "ignore": 0.0,
+            "now": 0.0,
+            "backlog": 0.92,
+            "business_hours": 0.08
+          }
+        }
+      }
+    },
+    "ALT-123": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 341.3,
+      "input_tokens": 744,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 0.0,
+          "confidence": 1.0,
+          "probabilities": {
+            "No user impact": 1.0,
+            "Internal users affected": 0.0,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.93,
+        "is_downstream_symptom": 0.11,
+        "is_actively_degrading": 0.35,
+        "urgency": {
+          "choice": "ignore",
+          "confidence": 0.84,
+          "probabilities": {
+            "business_hours": 0.01,
+            "backlog": 0.11,
+            "now": 0.0,
+            "ignore": 0.88
+          }
+        }
+      }
+    },
+    "ALT-124": {
+      "label": "P3",
+      "model": "jev-1.13.0",
+      "latency_ms": 373.3,
+      "input_tokens": 727,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 0.05,
+          "confidence": 0.95,
+          "probabilities": {
+            "No user impact": 0.96,
+            "Internal users affected": 0.04,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.05,
+        "is_downstream_symptom": 0.07,
+        "is_actively_degrading": 0.51,
+        "urgency": {
+          "choice": "backlog",
+          "confidence": 1.0,
+          "probabilities": {
+            "business_hours": 0.0,
+            "ignore": 0.0,
+            "backlog": 1.0,
+            "now": 0.0
+          }
+        }
+      }
+    },
+    "ALT-125": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 352.1,
+      "input_tokens": 711,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 0.15,
+          "confidence": 0.85,
+          "probabilities": {
+            "No user impact": 0.85,
+            "Internal users affected": 0.15,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.95,
+        "is_downstream_symptom": 0.09,
+        "is_actively_degrading": 0.84,
+        "urgency": {
+          "choice": "ignore",
+          "confidence": 0.86,
+          "probabilities": {
+            "business_hours": 0.02,
+            "backlog": 0.08,
+            "ignore": 0.9,
+            "now": 0.0
+          }
+        }
+      }
+    },
+    "ALT-126": {
+      "label": "P2",
+      "model": "jev-1.13.0",
+      "latency_ms": 330.6,
+      "input_tokens": 748,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 1.97,
+          "confidence": 0.96,
+          "probabilities": {
+            "No user impact": 0.02,
+            "Internal users affected": 0.0,
+            "Some customers affected": 0.98,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.09,
+        "is_downstream_symptom": 0.1,
+        "is_actively_degrading": 0.63,
+        "urgency": {
+          "choice": "business_hours",
+          "confidence": 0.99,
+          "probabilities": {
+            "ignore": 0.0,
+            "business_hours": 1.0,
+            "now": 0.0,
+            "backlog": 0.0
+          }
+        }
+      }
+    },
+    "ALT-127": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 358.5,
+      "input_tokens": 737,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 0.51,
+          "confidence": 0.49,
+          "probabilities": {
+            "No user impact": 0.53,
+            "Internal users affected": 0.44,
+            "Some customers affected": 0.03,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.64,
+        "is_downstream_symptom": 0.14,
+        "is_actively_degrading": 0.9,
+        "urgency": {
+          "choice": "business_hours",
+          "confidence": 0.38,
+          "probabilities": {
+            "ignore": 0.0,
+            "business_hours": 0.54,
+            "now": 0.45,
+            "backlog": 0.01
+          }
+        }
+      }
+    },
+    "ALT-128": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 333.0,
+      "input_tokens": 744,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 0.68,
+          "confidence": 0.47,
+          "probabilities": {
+            "No user impact": 0.42,
+            "Internal users affected": 0.5,
+            "Some customers affected": 0.06,
+            "Widespread customer impact": 0.02
+          }
+        },
+        "is_noise": 0.14,
+        "is_downstream_symptom": 0.98,
+        "is_actively_degrading": 0.84,
+        "urgency": {
+          "choice": "ignore",
+          "confidence": 0.97,
+          "probabilities": {
+            "ignore": 0.98,
+            "backlog": 0.02,
+            "business_hours": 0.0,
+            "now": 0.0
+          }
+        }
+      }
+    },
+    "ALT-129": {
+      "label": "P2",
+      "model": "jev-1.13.0",
+      "latency_ms": 366.8,
+      "input_tokens": 714,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 0.39,
+          "confidence": 0.61,
+          "probabilities": {
+            "No user impact": 0.83,
+            "Internal users affected": 0.0,
+            "Some customers affected": 0.12,
+            "Widespread customer impact": 0.05
+          }
+        },
+        "is_noise": 0.05,
+        "is_downstream_symptom": 0.11,
+        "is_actively_degrading": 0.48,
+        "urgency": {
+          "choice": "business_hours",
+          "confidence": 0.79,
+          "probabilities": {
+            "backlog": 0.14,
+            "now": 0.02,
+            "ignore": 0.0,
+            "business_hours": 0.84
+          }
+        }
+      }
+    },
+    "ALT-130": {
+      "label": "P1",
+      "model": "jev-1.13.0",
+      "latency_ms": 336.0,
+      "input_tokens": 766,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 2.92,
+          "confidence": 0.92,
+          "probabilities": {
+            "No user impact": 0.0,
+            "Internal users affected": 0.0,
+            "Some customers affected": 0.08,
+            "Widespread customer impact": 0.92
+          }
+        },
+        "is_noise": 0.03,
+        "is_downstream_symptom": 0.2,
+        "is_actively_degrading": 0.95,
+        "urgency": {
+          "choice": "now",
+          "confidence": 1.0,
+          "probabilities": {
+            "business_hours": 0.0,
+            "backlog": 0.0,
+            "now": 1.0,
+            "ignore": 0.0
+          }
+        }
+      }
+    },
+    "ALT-131": {
+      "label": "NEEDS_HUMAN",
+      "model": "jev-1.13.0",
+      "latency_ms": 364.6,
+      "input_tokens": 749,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 1.0,
+          "confidence": 1.0,
+          "probabilities": {
+            "No user impact": 0.0,
+            "Internal users affected": 1.0,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.11,
+        "is_downstream_symptom": 0.18,
+        "is_actively_degrading": 0.92,
+        "urgency": {
+          "choice": "now",
+          "confidence": 0.45,
+          "probabilities": {
+            "ignore": 0.0,
+            "business_hours": 0.39,
+            "backlog": 0.02,
+            "now": 0.59
+          }
+        }
+      }
+    },
+    "ALT-132": {
+      "label": "P2",
+      "model": "jev-1.13.0",
+      "latency_ms": 357.1,
+      "input_tokens": 735,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 1.0,
+          "confidence": 1.0,
+          "probabilities": {
+            "No user impact": 0.0,
+            "Internal users affected": 1.0,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.1,
+        "is_downstream_symptom": 0.15,
+        "is_actively_degrading": 0.58,
+        "urgency": {
+          "choice": "business_hours",
+          "confidence": 0.87,
+          "probabilities": {
+            "now": 0.04,
+            "ignore": 0.0,
+            "backlog": 0.06,
+            "business_hours": 0.9
+          }
+        }
+      }
+    },
+    "ALT-133": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 303.7,
+      "input_tokens": 701,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 0.17,
+          "confidence": 0.83,
+          "probabilities": {
+            "No user impact": 0.83,
+            "Internal users affected": 0.17,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.93,
+        "is_downstream_symptom": 0.11,
+        "is_actively_degrading": 0.79,
+        "urgency": {
+          "choice": "ignore",
+          "confidence": 0.61,
+          "probabilities": {
+            "now": 0.0,
+            "ignore": 0.71,
+            "backlog": 0.24,
+            "business_hours": 0.05
+          }
+        }
+      }
+    },
+    "ALT-134": {
+      "label": "P2",
+      "model": "jev-1.13.0",
+      "latency_ms": 489.3,
+      "input_tokens": 757,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 0.99,
+          "confidence": 0.99,
+          "probabilities": {
+            "No user impact": 0.01,
+            "Internal users affected": 0.99,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.06,
+        "is_downstream_symptom": 0.14,
+        "is_actively_degrading": 0.88,
+        "urgency": {
+          "choice": "now",
+          "confidence": 0.69,
+          "probabilities": {
+            "business_hours": 0.22,
+            "ignore": 0.0,
+            "backlog": 0.01,
+            "now": 0.77
+          }
+        }
+      }
+    },
+    "ALT-135": {
+      "label": "P2",
+      "model": "jev-1.13.0",
+      "latency_ms": 344.2,
+      "input_tokens": 765,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 0.15,
+          "confidence": 0.85,
+          "probabilities": {
+            "No user impact": 0.91,
+            "Internal users affected": 0.02,
+            "Some customers affected": 0.07,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.12,
+        "is_downstream_symptom": 0.12,
+        "is_actively_degrading": 0.77,
+        "urgency": {
+          "choice": "business_hours",
+          "confidence": 0.99,
+          "probabilities": {
+            "ignore": 0.0,
+            "now": 0.0,
+            "backlog": 0.01,
+            "business_hours": 0.99
+          }
+        }
+      }
+    },
+    "ALT-136": {
+      "label": "P2",
+      "model": "jev-1.13.0",
+      "latency_ms": 370.0,
+      "input_tokens": 761,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 0.5,
+          "confidence": 0.5,
+          "probabilities": {
+            "No user impact": 0.74,
+            "Internal users affected": 0.03,
+            "Some customers affected": 0.23,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.11,
+        "is_downstream_symptom": 0.14,
+        "is_actively_degrading": 0.72,
+        "urgency": {
+          "choice": "business_hours",
+          "confidence": 0.96,
+          "probabilities": {
+            "now": 0.01,
+            "business_hours": 0.97,
+            "ignore": 0.0,
+            "backlog": 0.02
+          }
+        }
+      }
+    },
+    "ALT-137": {
+      "label": "P2",
+      "model": "jev-1.13.0",
+      "latency_ms": 326.2,
+      "input_tokens": 721,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 1.0,
+          "confidence": 1.0,
+          "probabilities": {
+            "No user impact": 0.0,
+            "Internal users affected": 1.0,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.08,
+        "is_downstream_symptom": 0.17,
+        "is_actively_degrading": 0.89,
+        "urgency": {
+          "choice": "business_hours",
+          "confidence": 0.54,
+          "probabilities": {
+            "now": 0.33,
+            "backlog": 0.01,
+            "business_hours": 0.66,
+            "ignore": 0.0
+          }
+        }
+      }
+    },
+    "ALT-138": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 415.2,
+      "input_tokens": 731,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 0.44,
+          "confidence": 0.56,
+          "probabilities": {
+            "No user impact": 0.69,
+            "Internal users affected": 0.19,
+            "Some customers affected": 0.12,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.85,
+        "is_downstream_symptom": 0.14,
+        "is_actively_degrading": 0.69,
+        "urgency": {
+          "choice": "ignore",
+          "confidence": 0.64,
+          "probabilities": {
+            "backlog": 0.21,
+            "business_hours": 0.05,
+            "ignore": 0.73,
+            "now": 0.01
+          }
+        }
+      }
+    },
+    "ALT-139": {
+      "label": "P1",
+      "model": "jev-1.13.0",
+      "latency_ms": 326.0,
+      "input_tokens": 779,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 2.75,
+          "confidence": 0.75,
+          "probabilities": {
+            "No user impact": 0.0,
+            "Internal users affected": 0.0,
+            "Some customers affected": 0.24,
+            "Widespread customer impact": 0.76
+          }
+        },
+        "is_noise": 0.02,
+        "is_downstream_symptom": 0.17,
+        "is_actively_degrading": 0.96,
+        "urgency": {
+          "choice": "now",
+          "confidence": 1.0,
+          "probabilities": {
+            "backlog": 0.0,
+            "business_hours": 0.0,
+            "ignore": 0.0,
+            "now": 1.0
+          }
+        }
+      }
+    },
+    "ALT-140": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 312.7,
+      "input_tokens": 754,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 0.85,
+          "confidence": 0.15,
+          "probabilities": {
+            "No user impact": 0.42,
+            "Internal users affected": 0.35,
+            "Some customers affected": 0.19,
+            "Widespread customer impact": 0.04
+          }
+        },
+        "is_noise": 0.15,
+        "is_downstream_symptom": 0.98,
+        "is_actively_degrading": 0.83,
+        "urgency": {
+          "choice": "ignore",
+          "confidence": 0.9,
+          "probabilities": {
+            "backlog": 0.06,
+            "now": 0.0,
+            "ignore": 0.93,
+            "business_hours": 0.01
+          }
+        }
+      }
+    },
+    "ALT-141": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 401.8,
+      "input_tokens": 757,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 2.25,
+          "confidence": 0.72,
+          "probabilities": {
+            "No user impact": 0.01,
+            "Internal users affected": 0.0,
+            "Some customers affected": 0.72,
+            "Widespread customer impact": 0.27
+          }
+        },
+        "is_noise": 0.1,
+        "is_downstream_symptom": 0.98,
+        "is_actively_degrading": 0.86,
+        "urgency": {
+          "choice": "ignore",
+          "confidence": 0.83,
+          "probabilities": {
+            "ignore": 0.88,
+            "business_hours": 0.02,
+            "backlog": 0.08,
+            "now": 0.02
+          }
+        }
+      }
+    },
+    "ALT-142": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 346.2,
+      "input_tokens": 700,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 0.26,
+          "confidence": 0.74,
+          "probabilities": {
+            "No user impact": 0.75,
+            "Internal users affected": 0.25,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.91,
+        "is_downstream_symptom": 0.12,
+        "is_actively_degrading": 0.83,
+        "urgency": {
+          "choice": "ignore",
+          "confidence": 0.74,
+          "probabilities": {
+            "now": 0.01,
+            "business_hours": 0.06,
+            "backlog": 0.13,
+            "ignore": 0.8
+          }
+        }
+      }
+    },
+    "ALT-143": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 359.8,
+      "input_tokens": 714,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 0.1,
+          "confidence": 0.9,
+          "probabilities": {
+            "No user impact": 0.9,
+            "Internal users affected": 0.1,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.9,
+        "is_downstream_symptom": 0.14,
+        "is_actively_degrading": 0.78,
+        "urgency": {
+          "choice": "ignore",
+          "confidence": 0.43,
+          "probabilities": {
+            "now": 0.01,
+            "business_hours": 0.13,
+            "backlog": 0.29,
+            "ignore": 0.57
+          }
+        }
+      }
+    },
+    "ALT-144": {
+      "label": "NEEDS_HUMAN",
+      "model": "jev-1.13.0",
+      "latency_ms": 359.5,
+      "input_tokens": 732,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 1.0,
+          "confidence": 1.0,
+          "probabilities": {
+            "No user impact": 0.0,
+            "Internal users affected": 1.0,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.05,
+        "is_downstream_symptom": 0.16,
+        "is_actively_degrading": 0.9,
+        "urgency": {
+          "choice": "business_hours",
+          "confidence": 0.47,
+          "probabilities": {
+            "ignore": 0.0,
+            "now": 0.38,
+            "business_hours": 0.61,
+            "backlog": 0.01
+          }
+        }
+      }
+    },
+    "ALT-145": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 432.5,
+      "input_tokens": 707,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 0.11,
+          "confidence": 0.89,
+          "probabilities": {
+            "No user impact": 0.89,
+            "Internal users affected": 0.11,
+            "Some customers affected": 0.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.95,
+        "is_downstream_symptom": 0.1,
+        "is_actively_degrading": 0.83,
+        "urgency": {
+          "choice": "ignore",
+          "confidence": 0.93,
+          "probabilities": {
+            "ignore": 0.95,
+            "now": 0.0,
+            "business_hours": 0.01,
+            "backlog": 0.04
+          }
+        }
+      }
+    },
+    "ALT-146": {
+      "label": "P1",
+      "model": "jev-1.13.0",
+      "latency_ms": 394.3,
+      "input_tokens": 747,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 2.88,
+          "confidence": 0.88,
+          "probabilities": {
+            "No user impact": 0.0,
+            "Internal users affected": 0.0,
+            "Some customers affected": 0.12,
+            "Widespread customer impact": 0.88
+          }
+        },
+        "is_noise": 0.03,
+        "is_downstream_symptom": 0.17,
+        "is_actively_degrading": 0.95,
+        "urgency": {
+          "choice": "now",
+          "confidence": 1.0,
+          "probabilities": {
+            "now": 1.0,
+            "backlog": 0.0,
+            "business_hours": 0.0,
+            "ignore": 0.0
+          }
+        }
+      }
+    },
+    "ALT-147": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 349.3,
+      "input_tokens": 774,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 0.14,
+          "confidence": 0.86,
+          "probabilities": {
+            "No user impact": 0.88,
+            "Internal users affected": 0.11,
+            "Some customers affected": 0.01,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.94,
+        "is_downstream_symptom": 0.11,
+        "is_actively_degrading": 0.32,
+        "urgency": {
+          "choice": "backlog",
+          "confidence": 0.61,
+          "probabilities": {
+            "business_hours": 0.02,
+            "ignore": 0.27,
+            "backlog": 0.71,
+            "now": 0.0
+          }
+        }
+      }
+    },
+    "ALT-148": {
+      "label": "P2",
+      "model": "jev-1.13.0",
+      "latency_ms": 365.1,
+      "input_tokens": 765,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 2.0,
+          "confidence": 1.0,
+          "probabilities": {
+            "No user impact": 0.0,
+            "Internal users affected": 0.0,
+            "Some customers affected": 1.0,
+            "Widespread customer impact": 0.0
+          }
+        },
+        "is_noise": 0.06,
+        "is_downstream_symptom": 0.1,
+        "is_actively_degrading": 0.04,
+        "urgency": {
+          "choice": "business_hours",
+          "confidence": 0.99,
+          "probabilities": {
+            "business_hours": 1.0,
+            "backlog": 0.0,
+            "now": 0.0,
+            "ignore": 0.0
+          }
+        }
+      }
+    },
+    "ALT-149": {
+      "label": "SUPPRESS",
+      "model": "jev-1.13.0",
+      "latency_ms": 340.1,
+      "input_tokens": 780,
+      "output_tokens": 123,
+      "answers": {
+        "user_impact": {
+          "score": 2.87,
+          "confidence": 0.87,
+          "probabilities": {
+            "No user impact": 0.0,
+            "Internal users affected": 0.0,
+            "Some customers affected": 0.13,
+            "Widespread customer impact": 0.87
+          }
+        },
+        "is_noise": 0.04,
+        "is_downstream_symptom": 0.98,
+        "is_actively_degrading": 0.94,
+        "urgency": {
+          "choice": "ignore",
+          "confidence": 0.27,
+          "probabilities": {
+            "backlog": 0.16,
+            "business_hours": 0.03,
+            "now": 0.36,
+            "ignore": 0.45
+          }
+        }
+      }
+    },
+    "ALT-150": {
+      "label": "P2",
+      "model": "jev-1.13.0",
+      "latency_ms": 366.1,
+      "input_tokens": 715,
+      "output_tokens": 124,
+      "answers": {
+        "user_impact": {
+          "score": 0.33,
+          "confidence": 0.67,
+          "probabilities": {
+            "No user impact": 0.85,
+            "Internal users affected": 0.01,
+            "Some customers affected": 0.11,
+            "Widespread customer impact": 0.03
+          }
+        },
+        "is_noise": 0.06,
+        "is_downstream_symptom": 0.09,
+        "is_actively_degrading": 0.47,
+        "urgency": {
+          "choice": "business_hours",
+          "confidence": 0.76,
+          "probabilities": {
+            "ignore": 0.0,
+            "now": 0.01,
+            "backlog": 0.17,
+            "business_hours": 0.82
+          }
+        }
+      }
+    }
+  }
+}
