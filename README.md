@@ -8,6 +8,39 @@ latency and cost, with an estimated cost comparison against Claude Sonnet 5.
 Jev answers five narrow questions per alert and returns probabilities; the
 label is derived in code. No LLM is called anywhere in the pipeline.
 
+## What Jev is, and why it suits this problem
+
+Jev is a [System One](https://docs.typesafe.ai/concepts/system-one) model:
+a class of model built to make *fast, structured decisions that software can
+use directly*. It does not write replies, produce code, or explain its
+reasoning. It returns **typed answers and calibrated probabilities** —
+probabilities trained against outcomes, so 0.9 is meant to behave like 0.9.
+
+That constraint is the reason it fits alert triage. The judgment that is hard
+to automate here is semantic: *does this description say the thing is actually
+broken?* Everything else — comparing a breach ratio, counting firings,
+deciding what P1 means — is arithmetic and policy, which belong in code where
+they can be read, tested and argued with.
+
+So this project asks Jev five questions per alert and derives the label
+itself:
+
+| question | type | what it returns |
+|---|---|---|
+| who is affected? | `Score` | a position on four ordered impact levels |
+| is this noise? | `Noul` | P(yes) |
+| is it a downstream symptom? | `Noul` | P(yes) |
+| is it actively degrading? | `Noul` | P(yes) |
+| how urgent? | `Choice` | one of now / business_hours / backlog / ignore |
+
+[`combine()`](src/triage/jev.py) turns those five numbers into a label. It is
+an ordinary pure function with named thresholds — no model decides what P1
+means. Change the policy and you re-run `combine()` over the recorded answers
+for free, with no API calls; the raw judgments are the durable artifact.
+
+Whether this beats a pile of if-statements is an empirical question, which is
+what the rest of this repo measures.
+
 ## Results (98-alert test split)
 
 | | rules-only | Jev |
