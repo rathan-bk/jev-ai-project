@@ -1,7 +1,7 @@
 # Every target runs from the repository root. `make all` does not call Jev.
 PY ?= python3
 
-.PHONY: help install data rules jev tune-rules tune-jev cost eval test lint all
+.PHONY: help install data rules jev tune-rules tune-jev cost eval narrative test lint all
 
 help:           ## list targets
 	@grep -E '^[a-z-]+:.*##' $(MAKEFILE_LIST) | sed 's/:.*##/ -/'
@@ -30,10 +30,13 @@ cost:           ## Sonnet 5 cost estimate (no LLM calls)
 eval:           ## test-split evaluation -> results/summary.md
 	$(PY) -m triage.evaluate
 
+narrative:      ## plain-language write-up -> results/evaluation_summary.md
+	$(PY) -m triage.narrative
+
 test:
 	$(PY) -m pytest -q
 
 lint:
 	ruff check src tests && ruff format --check src tests
 
-all: data rules cost eval   ## everything that does not spend API credits
+all: data rules cost eval narrative   ## everything that does not spend API credits

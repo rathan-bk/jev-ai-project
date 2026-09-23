@@ -1,0 +1,168 @@
+{
+  "timestamp": "20260923T123222Z",
+  "inputs": [
+    "rules_20260923T123222Z.json",
+    "jev_20260923T122657Z.json",
+    "cost_20260923T123222Z.json"
+  ],
+  "test_n": 98,
+  "rules": {
+    "n": 98,
+    "accuracy": 0.8673469387755102,
+    "n_hard": 16,
+    "accuracy_hard": 0.1875,
+    "accuracy_easy": 1.0,
+    "n_gated": 0,
+    "n_rest": 98,
+    "accuracy_on_rest": 0.8673469387755102,
+    "p1_recall": 0.6923076923076923,
+    "per_class": {
+      "P1": {
+        "precision": 0.6923076923076923,
+        "recall": 0.6923076923076923,
+        "support": 13,
+        "gated": 0
+      },
+      "P2": {
+        "precision": 0.9047619047619048,
+        "recall": 0.8260869565217391,
+        "support": 23,
+        "gated": 0
+      },
+      "P3": {
+        "precision": 0.8888888888888888,
+        "recall": 0.9230769230769231,
+        "support": 26,
+        "gated": 0
+      },
+      "SUPPRESS": {
+        "precision": 0.8918918918918919,
+        "recall": 0.9166666666666666,
+        "support": 36,
+        "gated": 0
+      }
+    },
+    "confusion": {
+      "P1": {
+        "P1": 9,
+        "P2": 2,
+        "P3": 1,
+        "SUPPRESS": 1,
+        "NEEDS_HUMAN": 0
+      },
+      "P2": {
+        "P1": 0,
+        "P2": 19,
+        "P3": 2,
+        "SUPPRESS": 2,
+        "NEEDS_HUMAN": 0
+      },
+      "P3": {
+        "P1": 1,
+        "P2": 0,
+        "P3": 24,
+        "SUPPRESS": 1,
+        "NEEDS_HUMAN": 0
+      },
+      "SUPPRESS": {
+        "P1": 3,
+        "P2": 0,
+        "P3": 0,
+        "SUPPRESS": 33,
+        "NEEDS_HUMAN": 0
+      }
+    }
+  },
+  "jev": {
+    "n": 98,
+    "accuracy": 0.8673469387755102,
+    "n_hard": 16,
+    "accuracy_hard": 1.0,
+    "accuracy_easy": 0.8414634146341463,
+    "n_gated": 0,
+    "n_rest": 98,
+    "accuracy_on_rest": 0.8673469387755102,
+    "p1_recall": 1.0,
+    "per_class": {
+      "P1": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "support": 13,
+        "gated": 0
+      },
+      "P2": {
+        "precision": 0.6388888888888888,
+        "recall": 1.0,
+        "support": 23,
+        "gated": 0
+      },
+      "P3": {
+        "precision": 1.0,
+        "recall": 0.5,
+        "support": 26,
+        "gated": 0
+      },
+      "SUPPRESS": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "support": 36,
+        "gated": 0
+      }
+    },
+    "confusion": {
+      "P1": {
+        "P1": 13,
+        "P2": 0,
+        "P3": 0,
+        "SUPPRESS": 0,
+        "NEEDS_HUMAN": 0
+      },
+      "P2": {
+        "P1": 0,
+        "P2": 23,
+        "P3": 0,
+        "SUPPRESS": 0,
+        "NEEDS_HUMAN": 0
+      },
+      "P3": {
+        "P1": 0,
+        "P2": 13,
+        "P3": 13,
+        "SUPPRESS": 0,
+        "NEEDS_HUMAN": 0
+      },
+      "SUPPRESS": {
+        "P1": 0,
+        "P2": 0,
+        "P3": 0,
+        "SUPPRESS": 36,
+        "NEEDS_HUMAN": 0
+      }
+    },
+    "latency_ms_p50": 469.2,
+    "latency_ms_p95": 700.6,
+    "models_seen": [
+      "jev-1.13.0"
+    ]
+  },
+  "cost_test": {
+    "sonnet5_estimated": {
+      "system": "claude-sonnet-5",
+      "alerts": 98,
+      "input_tokens": 50164,
+      "output_tokens": 5880,
+      "total_usd": 0.159128,
+      "per_alert_usd": 0.00162376,
+      "per_1000_alerts_usd": 1.6238
+    },
+    "jev_actual": {
+      "system": "jev-1.13.0",
+      "alerts": 98,
+      "input_tokens": 74622,
+      "output_tokens": 0,
+      "total_usd": 0.003134,
+      "per_alert_usd": 3.198e-05,
+      "per_1000_alerts_usd": 0.032
+    }
+  }
+}

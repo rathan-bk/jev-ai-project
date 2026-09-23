@@ -30,8 +30,15 @@ silently suppress.
 All 13 of Jev's remaining errors are the same transition, P3 → P2: alerts
 it rates *business_hours* where the label rules say *backlog* (cert expiry,
 latency trends, restart loops). It never under-prioritises — no missed P1,
-no suppressed incident. Full tables, confusion matrices and every error
-with its raw answers: [`results/summary.md`](results/summary.md).
+no suppressed incident.
+
+**Two write-ups of the same run.**
+[`results/evaluation_summary.md`](results/evaluation_summary.md) is the
+plain-language one: what the two systems do differently, and the alerts where
+the description overturned the metrics.
+[`results/summary.md`](results/summary.md) is the reference: full tables,
+confusion matrices, and every error with its raw answers. Both are generated
+from the run files, so neither can drift from the data.
 
 ## Quick start
 
@@ -58,8 +65,9 @@ src/triage/
   jev.py                                      Jev questions + combine()
   llm_estimate.py                             Sonnet 5 cost estimate (no calls)
   evaluate.py                                 test-split report
+  narrative.py                                plain-language write-up
 data/       alerts.json (no labels) · labels.json · split.json
-results/    timestamped run files + summary.md
+results/    timestamped run files + summary.md + evaluation_summary.md
 tests/      28 tests incl. a reproducibility guard for the dataset
 docs/       ARCHITECTURE.md · DATASET.md · METHODOLOGY.md
 ```
