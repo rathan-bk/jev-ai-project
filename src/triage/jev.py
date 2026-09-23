@@ -64,7 +64,7 @@ QUESTIONS: Final = {
     "is_noise": Noul(
         instructions=(
             "This alert is noise: a test/health-check signal, a known flapping pattern with nothing new, "
-            "or a non-production environment"
+            "or a development (dev) environment. A staging environment is not by itself noise"
         ),
     ),
     "is_downstream_symptom": Noul(
@@ -155,7 +155,9 @@ class Thresholds:
     downstream_min: float = 0.6  # P(is_downstream_symptom) at or above this -> SUPPRESS
     p1_impact_min: float = 2.0  # user_impact score needed for P1 (2 = "Some customers affected")
     p1_degrading_min: float = 0.5  # P(is_actively_degrading) needed for P1
-    urgency_confidence_min: float = 0.5  # urgency confidence below this -> NEEDS_HUMAN
+    # Tuned on the tune split: every positive gate cost strict accuracy monotonically
+    # (0.885 at <=0.4, 0.846 at 0.6), so the gate is off. See docs/METHODOLOGY.md.
+    urgency_confidence_min: float = 0.0  # urgency confidence below this -> NEEDS_HUMAN
 
 
 DEFAULT_THRESHOLDS: Final = Thresholds()

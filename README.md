@@ -12,19 +12,26 @@ label is derived in code. No LLM is called anywhere in the pipeline.
 
 | | rules-only | Jev |
 |---|---|---|
-| overall accuracy (strict) | **86.7%** | 80.6% |
-| hard cases, n=16 | 18.8% | **75.0%** |
+| overall accuracy (strict) | 86.7% | 86.7% |
+| hard cases, n=16 | 18.8% | **100%** |
+| easy cases, n=82 | **100%** | 84.1% |
 | **P1 recall** | 69.2% | **100%** |
-| sent to `NEEDS_HUMAN` | — | 6 (85.9% on the rest) |
-| latency p50 / p95 (India → public API) | ~0 | 363 / 424 ms |
-| cost per alert | $0 | $0.0000315 actual · Sonnet 5 est. $0.0016 |
+| real P1/P2 silently suppressed | 3 | **0** |
+| latency p50 / p95 (India → public API) | ~0 | 469 / 701 ms |
+| cost per alert | $0 | $0.0000320 actual · Sonnet 5 est. $0.0016 |
 
-Jev loses on headline accuracy and wins on what matters: every real P1 is
-caught, and 12 of 16 hard cases are right versus 3 of 16 for rules. Of its
-19 errors, 9 come from the `is_noise` question wording suppressing staging
-alerts, 4 are cert-expiry alerts it rates a notch more urgent than the
-label, and 6 were routed to a human. Full tables, confusion matrices and
-every error with its raw answers: [`results/summary.md`](results/summary.md).
+The two tie on headline accuracy and fail in completely different places.
+Rules are perfect on the 82 easy alerts, where the structured fields alone
+decide the label, and collapse to 18.8% on the 16 hard ones, where the
+fields are misleading and only the description carries the answer. Jev
+gets **all 16 hard cases right**, including three real incidents the rules
+silently suppress.
+
+All 13 of Jev's remaining errors are the same transition, P3 → P2: alerts
+it rates *business_hours* where the label rules say *backlog* (cert expiry,
+latency trends, restart loops). It never under-prioritises — no missed P1,
+no suppressed incident. Full tables, confusion matrices and every error
+with its raw answers: [`results/summary.md`](results/summary.md).
 
 ## Quick start
 

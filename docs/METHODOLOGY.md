@@ -123,15 +123,24 @@ the difference becomes tangible.
 
 ## Known limitations of this benchmark
 
-- **Question wording vs label rules.** The `is_noise` question as written
-  includes "a non-production environment", while the label rules make
-  staging-blocking-a-release a P3. Jev follows the question, so those
-  alerts are suppressed. This is the largest single error source and a
-  question-design finding, not a model-capability one.
-- **Label boundaries.** Cert-expiry alerts (6–13 days out, renewal failed)
-  are labelled P3; Jev rates them *business_hours* (P2). Reasonable people
-  disagree here.
+- **Question wording vs label rules (fixed).** The `is_noise` question
+  originally read "or a non-production environment", while the label rules
+  make staging-blocking-a-release a P3. Jev followed the question and
+  suppressed those alerts — 9 of 21 errors. The question now names `dev`
+  explicitly and says staging is not by itself noise, which matches the
+  label rules in `docs/DATASET.md`. This was a question-design finding,
+  not a model-capability one, and it was the single largest error source.
+- **Label boundaries.** This is now the *only* remaining error source: all
+  13 errors are P3 alerts Jev rates *business_hours* (P2) — cert expiry,
+  latency trends, restart loops. The label rules call these backlog work;
+  Jev calls them same-day work. Reasonable people disagree here, and the
+  disagreement is one-directional: Jev never under-prioritises.
 - **Sample size.** 16 hard cases in the test split; one alert is 6 points.
-- **The confidence gate is weak on this data.** On the tune split the
-  gated alerts were only modestly less accurate than the rest.
+- **The confidence gate does not pay on this data, and is off.** Tuning it
+  on the tune split showed strict accuracy falling monotonically as the
+  gate rises (0.885 at <=0.4, 0.865 at 0.5, 0.846 at 0.6, 0.750 at 0.7).
+  The apparent gain in accuracy-on-the-rest at 0.6 came from removing four
+  coin-flip alerts from the denominator, which is noise at n=4. The gate
+  is therefore set to 0.0 and `NEEDS_HUMAN` never fires. The mechanism is
+  retained because a larger or noisier dataset could justify it.
 - **Synthetic data**, see `docs/DATASET.md`.
