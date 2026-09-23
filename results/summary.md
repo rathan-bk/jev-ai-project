@@ -1,6 +1,6 @@
 # Alert triage benchmark — test set results
 
-Generated 2026-09-23T12:32:22+00:00 from `rules_20260923T123222Z.json`, `jev_20260923T122657Z.json`, `cost_20260923T123222Z.json`.  
+Generated 2026-09-23T12:47:46+00:00 from `rules_20260923T124745Z.json`, `jev_20260923T122657Z.json`, `cost_20260923T124746Z.json`.  
 Test set: 98 alerts (16 hard). Jev model (from the response `model` field): `jev-1.13.0`. Thresholds for both systems were tuned on the separate tune split only.
 
 ## Headline
