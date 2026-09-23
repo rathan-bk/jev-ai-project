@@ -68,7 +68,7 @@ src/triage/
   narrative.py                                plain-language write-up
 data/       alerts.json (no labels) · labels.json · split.json
 results/    timestamped run files + summary.md + evaluation_summary.md
-tests/      28 tests incl. a reproducibility guard for the dataset
+tests/      unit tests incl. a reproducibility guard for the dataset
 docs/       ARCHITECTURE.md · DATASET.md · METHODOLOGY.md
 ```
 
